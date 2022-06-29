@@ -1,0 +1,11 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:207:17: error: break statement not within loop or switch
+  207 |                 break;
+      |                 ^~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:210:1: warning: control reaches end of non-void function [-Wreturn-type]
+  210 | }
+      | ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,31 @@
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:260:26: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 9 has type ‘int’ [-Wformat=]
+  260 |                 ROS_INFO("GPS line %ld success, %ld", k, nSample_line);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~     ~~~~~~~~~~~~
+      |                                                          |
+      |                                                          int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:260:17: note: in expansion of macro ‘ROS_INFO’
+  260 |                 ROS_INFO("GPS line %ld success, %ld", k, nSample_line);
+      |                 ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:260:51: note: format string is defined here
+  260 |                 ROS_INFO("GPS line %ld success, %ld", k, nSample_line);
+      |                                                 ~~^
+      |                                                   |
+      |                                                   long int
+      |                                                 %d

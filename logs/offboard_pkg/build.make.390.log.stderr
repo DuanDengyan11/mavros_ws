@@ -1,0 +1,16 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle_Time()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:325:24: error: ‘ros::time’ has not been declared
+  325 |         T_begin = ros::time::now();
+      |                        ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:330:25: error: ‘ros::time’ has not been declared
+  330 |     double T_now = ros::time::now();
+      |                         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:336:9: error: ‘ned’ was not declared in this scope
+  336 |         ned = uav[i].get_ned(theta_d, yaw_d, R);
+      |         ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:337:40: error: ‘lla’ was not declared in this scope
+  337 |         uav[i].ned2lla(ned, lla_lead0, lla);
+      |                                        ^~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

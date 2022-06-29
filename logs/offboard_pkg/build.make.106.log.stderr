@@ -1,0 +1,14 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:22:20: error: ‘class ros::NodeHandle’ has no member named ‘getparam’; did you mean ‘getParam’?
+   22 |         private_nh.getparam("length", length_list);
+      |                    ^~~~~~~~
+      |                    getParam
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:23:41: error: expected ‘;’ before ‘}’ token
+   23 |         Init_length(length_list, length)
+      |                                         ^
+      |                                         ;
+   24 |     }
+      |     ~                                    
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

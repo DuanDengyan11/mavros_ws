@@ -1,0 +1,15 @@
+/usr/bin/ld: CMakeFiles/apm_3_gps_circle.dir/src/offboard_node_apm_three_gps1.cpp.o: in function `main':
+offboard_node_apm_three_gps1.cpp:(.text+0x37d0): undefined reference to `GeographicLib::Geoid::Geoid(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)'
+/usr/bin/ld: CMakeFiles/apm_3_gps_circle.dir/src/offboard_node_apm_three_gps1.cpp.o: in function `__static_initialization_and_destruction_0(int, int)':
+offboard_node_apm_three_gps1.cpp:(.text+0x4f21): undefined reference to `GeographicLib::Geocentric::Geocentric(double, double)'
+/usr/bin/ld: CMakeFiles/apm_3_gps_circle.dir/src/offboard_node_apm_three_gps1.cpp.o: in function `GeographicLib::Geocentric::Forward(double, double, double, double&, double&, double&) const':
+offboard_node_apm_three_gps1.cpp:(.text._ZNK13GeographicLib10Geocentric7ForwardEdddRdS1_S1_[_ZNK13GeographicLib10Geocentric7ForwardEdddRdS1_S1_]+0x70): undefined reference to `GeographicLib::Geocentric::IntForward(double, double, double, double&, double&, double&, double*) const'
+/usr/bin/ld: CMakeFiles/apm_3_gps_circle.dir/src/offboard_node_apm_three_gps1.cpp.o: in function `GeographicLib::Geocentric::Reverse(double, double, double, double&, double&, double&) const':
+offboard_node_apm_three_gps1.cpp:(.text._ZNK13GeographicLib10Geocentric7ReverseEdddRdS1_S1_[_ZNK13GeographicLib10Geocentric7ReverseEdddRdS1_S1_]+0x70): undefined reference to `GeographicLib::Geocentric::IntReverse(double, double, double, double&, double&, double&, double*) const'
+/usr/bin/ld: CMakeFiles/apm_3_gps_circle.dir/src/offboard_node_apm_three_gps1.cpp.o: in function `GeographicLib::Geoid::operator()(double, double) const':
+offboard_node_apm_three_gps1.cpp:(.text._ZNK13GeographicLib5GeoidclEdd[_ZNK13GeographicLib5GeoidclEdd]+0x34): undefined reference to `GeographicLib::Geoid::height(double, double) const'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/apm_3_gps_circle.dir/build.make:106: /home/tutu/FControl/mavros_ws/devel/.private/offboard_pkg/lib/offboard_pkg/apm_3_gps_circle] Error 1
+make[1]: *** [CMakeFiles/Makefile2:210: CMakeFiles/apm_3_gps_circle.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

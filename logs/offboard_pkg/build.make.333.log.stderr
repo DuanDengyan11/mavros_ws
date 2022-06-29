@@ -1,0 +1,62 @@
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lead_points_line(XmlRpc::XmlRpcValue&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:326:48: error: ‘class std::vector<mavros_msgs::GlobalPositionTarget_<std::allocator<void> > >’ has no member named ‘latitude’
+  326 |         ROS_INFO("%f, %f, %f", uav[i].lla_line.latitude, uav[i].lla_line.longitude,  uav[i].lla_line.altitude);
+      |                                                ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:326:9: note: in expansion of macro ‘ROS_INFO’
+  326 |         ROS_INFO("%f, %f, %f", uav[i].lla_line.latitude, uav[i].lla_line.longitude,  uav[i].lla_line.altitude);
+      |         ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:326:74: error: ‘class std::vector<mavros_msgs::GlobalPositionTarget_<std::allocator<void> > >’ has no member named ‘longitude’
+  326 |         ROS_INFO("%f, %f, %f", uav[i].lla_line.latitude, uav[i].lla_line.longitude,  uav[i].lla_line.altitude);
+      |                                                                          ^~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:326:9: note: in expansion of macro ‘ROS_INFO’
+  326 |         ROS_INFO("%f, %f, %f", uav[i].lla_line.latitude, uav[i].lla_line.longitude,  uav[i].lla_line.altitude);
+      |         ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:326:102: error: ‘class std::vector<mavros_msgs::GlobalPositionTarget_<std::allocator<void> > >’ has no member named ‘altitude’
+  326 |         ROS_INFO("%f, %f, %f", uav[i].lla_line.latitude, uav[i].lla_line.longitude,  uav[i].lla_line.altitude);
+      |                                                                                                      ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:326:9: note: in expansion of macro ‘ROS_INFO’
+  326 |         ROS_INFO("%f, %f, %f", uav[i].lla_line.latitude, uav[i].lla_line.longitude,  uav[i].lla_line.altitude);
+      |         ^~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

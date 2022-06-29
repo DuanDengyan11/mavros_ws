@@ -1,0 +1,51 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:33:52: error: ‘lead_points_line_list’ was not declared in this scope; did you mean ‘lead_points_list’?
+   33 |         private_nh.getParam("lead_LocalWayPoints", lead_points_line_list);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+      |                                                    lead_points_list
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:174:6: error: no declaration matches ‘bool MultiBody::FlightLine()’
+  174 | bool MultiBody::FlightLine()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:174:6: note: no functions named ‘bool MultiBody::FlightLine()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lead_points_line(XmlRpc::XmlRpcValue&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:269:13: error: ‘GeoPos’ was not declared in this scope
+  269 |             GeoPos.type_mask = 8+16+32+64+128+256+512+1024+2048;
+      |             ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:271:13: error: ‘GeoPos’ was not declared in this scope
+  271 |             GeoPos.type_mask = 8+16+32+64+128+256+512+2048;
+      |             ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:272:34: error: conversion from ‘XmlRpc::XmlRpcValue’ to ‘mavros_msgs::GlobalPositionTarget_<std::allocator<void> >::_yaw_type’ {aka ‘float’} is ambiguous
+  272 |             lla.yaw = data_list[3];
+      |                                  ^
+In file included from /opt/ros/noetic/include/ros/node_handle.h:52,
+                 from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:91:5: note: candidate: ‘XmlRpc::XmlRpcValue::operator bool&()’
+   91 |     operator bool&()          { assertTypeOrInvalid(TypeBoolean); return _value.asBool; }
+      |     ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:92:5: note: candidate: ‘XmlRpc::XmlRpcValue::operator int&()’
+   92 |     operator int&()           { assertTypeOrInvalid(TypeInt); return _value.asInt; }
+      |     ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:93:5: note: candidate: ‘XmlRpc::XmlRpcValue::operator double&()’
+   93 |     operator double&()        { assertTypeOrInvalid(TypeDouble); return _value.asDouble; }
+      |     ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:98:5: note: candidate: ‘XmlRpc::XmlRpcValue::operator const bool&() const’
+   98 |     operator const bool&() const          { assertTypeOrInvalid(TypeBoolean); return _value.asBool; }
+      |     ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:99:5: note: candidate: ‘XmlRpc::XmlRpcValue::operator const int&() const’
+   99 |     operator const int&() const           { assertTypeOrInvalid(TypeInt); return _value.asInt; }
+      |     ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:100:5: note: candidate: ‘XmlRpc::XmlRpcValue::operator const double&() const’
+  100 |     operator const double&() const        { assertTypeOrInvalid(TypeDouble); return _value.asDouble; }
+      |     ^~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

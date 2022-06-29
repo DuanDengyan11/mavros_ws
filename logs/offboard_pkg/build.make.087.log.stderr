@@ -1,0 +1,9 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:147:27: error: ‘q_init’ was not declared in this scope; did you mean ‘u_int’?
+  147 |         uav[i].SetAttOnly(q_init);
+      |                           ^~~~~~
+      |                           u_int
+make[2]: *** [CMakeFiles/main.dir/build.make:63: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,1067 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:18: error: no match for ‘operator<<’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘const char [6]’)
+   63 |     WriteLogFile <<"test:"<<endl;
+      |     ~~~~~~~~~~~~ ^~~~~~~~~
+      |     |              |
+      |     |              const char [6]
+      |     std::ifstream {aka std::basic_ifstream<char>}
+In file included from /opt/ros/noetic/include/ros/node_handle.h:52,
+                 from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:29: note: candidate: ‘std::ostream& operator<<(std::ostream&, const XmlRpc::XmlRpcValue&)’
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                             ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:54: note:   no known conversion for argument 1 from ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} to ‘std::ostream&’ {aka ‘std::basic_ostream<char>&’}
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                                        ~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6419:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6419 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6419:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/system_error:217:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)’
+  217 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/9/system_error:217:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:506:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)’
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:506:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:511:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)’
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:511:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:517:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)’
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:517:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:523:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)’
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:523:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:528:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)’
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:528:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:548:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  548 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:548:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:321:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)’
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:565:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’
+  565 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:565:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:578:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)’
+  578 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:578:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:583:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)’
+  583 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:583:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:691:5: note: candidate: ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)’
+  691 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:691:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ifstream<char>&; _Tp = char [6]]’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20:   required from here
+/usr/include/c++/9/ostream:691:5: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:79:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)’
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:79:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:109:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)’
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:109:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:143:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)’
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:143:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:178:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:178:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:208:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)’
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:208:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:238:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)’
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:238:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:311:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)’
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:311:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:363:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)’
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:363:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:552:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::complex<_Tp>&)’
+  552 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:552:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note: candidate: ‘template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)’
+   66 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/detail/container_fwd.hpp:96,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bitset:1538:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bitset<_Nb>&)’
+ 1538 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bitset:1538:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:393: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:18: error: no match for ‘operator<<’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘const char [6]’)
+   63 |     WriteLogFile <<"test:"<<endl;
+      |     ~~~~~~~~~~~~ ^~~~~~~~~
+      |     |              |
+      |     |              const char [6]
+      |     std::ifstream {aka std::basic_ifstream<char>}
+In file included from /opt/ros/noetic/include/ros/node_handle.h:52,
+                 from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:29: note: candidate: ‘std::ostream& operator<<(std::ostream&, const XmlRpc::XmlRpcValue&)’
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                             ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:54: note:   no known conversion for argument 1 from ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} to ‘std::ostream&’ {aka ‘std::basic_ostream<char>&’}
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                                        ~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6419:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6419 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6419:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/system_error:217:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)’
+  217 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/9/system_error:217:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:506:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)’
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:506:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:511:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)’
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:511:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:517:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)’
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:517:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:523:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)’
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:523:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:528:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)’
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:528:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:548:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  548 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:548:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:321:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)’
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:565:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’
+  565 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:565:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:578:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)’
+  578 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:578:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:583:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)’
+  583 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:583:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:691:5: note: candidate: ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)’
+  691 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:691:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ifstream<char>&; _Tp = char [6]]’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20:   required from here
+/usr/include/c++/9/ostream:691:5: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:79:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)’
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:79:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:109:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)’
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:109:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:143:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)’
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:143:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:178:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:178:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:208:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)’
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:208:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:238:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)’
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:238:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:311:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)’
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:311:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:363:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)’
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:363:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:552:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::complex<_Tp>&)’
+  552 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:552:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note: candidate: ‘template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)’
+   66 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/detail/container_fwd.hpp:96,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bitset:1538:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bitset<_Nb>&)’
+ 1538 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bitset:1538:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node3.dir/build.make:89: CMakeFiles/offboard_pkg_node3.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/offboard_pkg_node3.dir/all] Error 2
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:18: error: no match for ‘operator<<’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘const char [6]’)
+   63 |     WriteLogFile <<"test:"<<endl;
+      |     ~~~~~~~~~~~~ ^~~~~~~~~
+      |     |              |
+      |     |              const char [6]
+      |     std::ifstream {aka std::basic_ifstream<char>}
+In file included from /opt/ros/noetic/include/ros/node_handle.h:52,
+                 from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:29: note: candidate: ‘std::ostream& operator<<(std::ostream&, const XmlRpc::XmlRpcValue&)’
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                             ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:54: note:   no known conversion for argument 1 from ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} to ‘std::ostream&’ {aka ‘std::basic_ostream<char>&’}
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                                        ~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6419:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6419 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6419:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/system_error:217:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)’
+  217 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/9/system_error:217:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:506:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)’
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:506:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:511:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)’
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:511:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:517:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)’
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:517:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:523:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)’
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:523:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:528:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)’
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:528:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:548:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  548 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:548:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:321:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)’
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:565:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’
+  565 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:565:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:578:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)’
+  578 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:578:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:583:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)’
+  583 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:583:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<char, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/ostream:691:5: note: candidate: ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)’
+  691 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:691:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ifstream<char>&; _Tp = char [6]]’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20:   required from here
+/usr/include/c++/9/ostream:691:5: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:79:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)’
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:79:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:109:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)’
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:109:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:143:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)’
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:143:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:178:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:178:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:208:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)’
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:208:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:238:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)’
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:238:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:311:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)’
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:311:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:363:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)’
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:363:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:552:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::complex<_Tp>&)’
+  552 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:552:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note: candidate: ‘template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)’
+   66 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+In file included from /usr/include/boost/detail/container_fwd.hpp:96,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bitset:1538:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bitset<_Nb>&)’
+ 1538 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bitset:1538:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:20: note:   ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+   63 |     WriteLogFile <<"test:"<<endl;
+      |                    ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node2.dir/build.make:89: CMakeFiles/offboard_pkg_node2.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/offboard_pkg_node2.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

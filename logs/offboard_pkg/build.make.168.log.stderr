@@ -1,0 +1,24 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:15:89: error: expected ‘;’ at end of member declaration
+   15 |     void Init_LocalWayPoints(XmlRpc::XmlRpcValue &waypoint, int nVehicle, int nWayPoints)
+      |                                                                                         ^
+      |                                                                                          ;
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&, int, int)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:58:20: error: ‘std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > > TaskManager::LocalWayPoints_matrix’ is private within this context
+   58 |             uav[j].LocalWayPoints_matrix.push_back(tempPose);
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:45:45: note: declared private here
+   45 |     std::vector<geometry_msgs::PoseStamped> LocalWayPoints_matrix;
+      |                                             ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:2:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:15:89: error: expected ‘;’ at end of member declaration
+   15 |     void Init_LocalWayPoints(XmlRpc::XmlRpcValue &waypoint, int nVehicle, int nWayPoints)
+      |                                                                                         ^
+      |                                                                                          ;
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

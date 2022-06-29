@@ -1,0 +1,82 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::get_ned_load(float, float, float)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:101:42: error: ‘Vector3d2Vector3’ was not declared in this scope
+  101 |     ned = Vector32Vector3d(m.transpose()*Vector3d2Vector3(pos));
+      |                                          ^~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:101:11: error: ‘Vector32Vector3d’ was not declared in this scope
+  101 |     ned = Vector32Vector3d(m.transpose()*Vector3d2Vector3(pos));
+      |           ^~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::get_ned_heli(float, float, float, float*)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:116:42: error: ‘Vector3d2Vector3’ was not declared in this scope
+  116 |     ned = Vector32Vector3d(m.transpose()*Vector3d2Vector3(pos));
+      |                                          ^~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:116:11: error: ‘Vector32Vector3d’ was not declared in this scope
+  116 |     ned = Vector32Vector3d(m.transpose()*Vector3d2Vector3(pos));
+      |           ^~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘void TaskManager::ned2lla(const Vector3d&, const Vector3d&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:134:5: error: reference to ‘map’ is ambiguous
+  134 |     map.Forward(lla0.x(), lla0.y(), lla0.z(), ecef0.x(), ecef0.y(), ecef0.z());
+      |     ^~~
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/noetic/include/ros/console.h:42,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/usr/include/c++/9/bits/stl_map.h:100:11: note: candidates are: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> class std::map’
+  100 |     class map
+      |           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:4:27: note:                 ‘GeographicLib::Geocentric map’
+    4 | GeographicLib::Geocentric map(GeographicLib::Constants::WGS84_a(),
+      |                           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:141:5: error: reference to ‘map’ is ambiguous
+  141 |     map.Reverse(ecef.x(), ecef.y(), ecef.z(), lla_new.x(), lla_new.y(), lla_new.z());
+      |     ^~~
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/noetic/include/ros/console.h:42,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/usr/include/c++/9/bits/stl_map.h:100:11: note: candidates are: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> class std::map’
+  100 |     class map
+      |           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:4:27: note:                 ‘GeographicLib::Geocentric map’
+    4 | GeographicLib::Geocentric map(GeographicLib::Constants::WGS84_a(),
+      |                           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::lla2enu(const Vector3d&, const Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:148:5: error: reference to ‘map’ is ambiguous
+  148 |     map.Forward(lla0.x(), lla0.y(), lla0.z(), ecef0.x(), ecef0.y(), ecef0.z());
+      |     ^~~
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/noetic/include/ros/console.h:42,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/usr/include/c++/9/bits/stl_map.h:100:11: note: candidates are: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> class std::map’
+  100 |     class map
+      |           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:4:27: note:                 ‘GeographicLib::Geocentric map’
+    4 | GeographicLib::Geocentric map(GeographicLib::Constants::WGS84_a(),
+      |                           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:149:5: error: reference to ‘map’ is ambiguous
+  149 |     map.Forward(lla1.x(), lla1.y(), lla1.z(), ecef1.x(), ecef1.y(), ecef1.z());
+      |     ^~~
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/noetic/include/ros/console.h:42,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/usr/include/c++/9/bits/stl_map.h:100:11: note: candidates are: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> class std::map’
+  100 |     class map
+      |           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:4:27: note:                 ‘GeographicLib::Geocentric map’
+    4 | GeographicLib::Geocentric map(GeographicLib::Constants::WGS84_a(),
+      |                           ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘double TaskManager::calcGPSDistance(double, double, double, double)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:178:29: error: expected initializer before numeric constant
+  178 |     double  RADIO_TERRESTRE 6372797.56085;
+      |                             ^~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:179:24: error: ‘RADIO_TERRESTRE’ was not declared in this scope
+  179 |     double  distance = RADIO_TERRESTRE * c;
+      |                        ^~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

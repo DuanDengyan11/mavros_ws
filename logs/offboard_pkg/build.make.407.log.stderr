@@ -1,0 +1,30 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle_Time()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:342:21: error: conflicting declaration ‘Eigen::Vector3d lla’
+  342 |     Eigen::Vector3d lla, ned;
+      |                     ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:317:39: note: previous declaration as ‘mavros_msgs::GlobalPositionTarget lla’
+  317 |     mavros_msgs::GlobalPositionTarget lla;
+      |                                       ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:353:40: error: cannot convert ‘mavros_msgs::GlobalPositionTarget’ {aka ‘mavros_msgs::GlobalPositionTarget_<std::allocator<void> >’} to ‘Eigen::Vector3d&’ {aka ‘Eigen::Matrix<double, 3, 1>&’}
+  353 |         uav[i].ned2lla(ned, lla_lead0, lla);
+      |                                        ^~~
+      |                                        |
+      |                                        mavros_msgs::GlobalPositionTarget {aka mavros_msgs::GlobalPositionTarget_<std::allocator<void> >}
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:90:92: note:   initializing argument 3 of ‘void TaskManager::ned2lla(const Vector3d&, const Vector3d&, Eigen::Vector3d&)’
+   90 |     void ned2lla(const Eigen::Vector3d &ned, const Eigen::Vector3d &lla0, Eigen::Vector3d &lla_new);
+      |                                                                           ~~~~~~~~~~~~~~~~~^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:354:28: error: cannot convert ‘mavros_msgs::GlobalPositionTarget’ {aka ‘mavros_msgs::GlobalPositionTarget_<std::allocator<void> >’} to ‘Eigen::Vector3d&’ {aka ‘Eigen::Matrix<double, 3, 1>&’}
+  354 |         uav[i].publish_lla(lla);
+      |                            ^~~
+      |                            |
+      |                            mavros_msgs::GlobalPositionTarget {aka mavros_msgs::GlobalPositionTarget_<std::allocator<void> >}
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:100:39: note:   initializing argument 1 of ‘void TaskManager::publish_lla(Eigen::Vector3d&)’
+  100 |     void publish_lla(Eigen::Vector3d &pos);
+      |                      ~~~~~~~~~~~~~~~~~^~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

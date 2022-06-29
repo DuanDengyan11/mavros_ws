@@ -1,0 +1,10 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::AllWayPoints()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:133:13: error: ‘local_lla’ was not declared in this scope
+  133 |             local_lla[i] = uav[i].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:149:51: error: ‘local_lla’ was not declared in this scope
+  149 |                 distance = uav[i].calcGPSDistance(local_lla[i], local_lla[j]);
+      |                                                   ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

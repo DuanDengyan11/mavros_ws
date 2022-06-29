@@ -1,0 +1,12 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:100:13: error: ‘lla_load0’ was not declared in this scope; did you mean ‘lla_load’?
+  100 |             lla_load0 = uav[nVehicle-1].get_lla();
+      |             ^~~~~~~~~
+      |             lla_load
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:103:13: error: ‘lla_load0’ was not declared in this scope; did you mean ‘lla_load’?
+  103 |             lla_load0 = uav[0].get_lla();
+      |             ^~~~~~~~~
+      |             lla_load
+make[2]: *** [CMakeFiles/main.dir/build.make:63: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

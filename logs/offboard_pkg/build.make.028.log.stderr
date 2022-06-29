@@ -1,0 +1,22 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:105:13: error: ‘lla_lead0’ was not declared in this scope
+  105 |             lla_lead0 = uav[nVehicle-1].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:108:13: error: ‘lla_lead0’ was not declared in this scope
+  108 |             lla_lead0 = uav[0].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:116:64: error: ‘angle_d’ was not declared in this scope; did you mean ‘angle’?
+  116 |                 ned[i] = get_ned(theta_d, yaw_d, R, length[i], angle_d[i])
+      |                                                                ^~~~~~~
+      |                                                                angle
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:116:26: error: ‘get_ned’ was not declared in this scope
+  116 |                 ned[i] = get_ned(theta_d, yaw_d, R, length[i], angle_d[i])
+      |                          ^~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:63: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘bool TaskManager::is_GPS_succuss(Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:202:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  202 | }
+      | ^
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

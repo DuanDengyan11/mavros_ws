@@ -1,0 +1,11 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lla_line(double, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:389:50: error: expected ‘;’ before ‘uav’
+  389 |             ned = uav[i].get_ned_line(dis, yaw_d)
+      |                                                  ^
+      |                                                  ;
+  390 |             uav[i].ned2lla(ned, lla_lead0, lla);
+      |             ~~~                                   
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

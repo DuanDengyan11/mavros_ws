@@ -1,0 +1,7 @@
+[31m[1mCMake Error[0m at /home/tutu/FControl/mavros_ws/src/offboard_pkg/CMakeLists.txt:216 (include):
+  include could not find load file:
+
+    CheckGeographicLibDatasets
+
+
+make: *** [Makefile:1380: cmake_check_build_system] Error 1

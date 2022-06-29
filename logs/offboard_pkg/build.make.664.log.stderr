@@ -1,0 +1,66 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘void TaskManager::Log_pos(Eigen::Vector3d&, Eigen::Vector3d&, Eigen::Vector3d&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:75:42: error: expression cannot be used as a function
+   75 |     enu.x() = local_pose.pose.position.x();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:76:42: error: expression cannot be used as a function
+   76 |     enu.y() = local_pose.pose.position.y();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:77:42: error: expression cannot be used as a function
+   77 |     enu.z() = local_pose.pose.position.z();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:78:42: error: expression cannot be used as a function
+   78 |     t_enu.x() = tempPose.pose.position.x();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:79:42: error: expression cannot be used as a function
+   79 |     t_enu.y() = tempPose.pose.position.y();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:80:42: error: expression cannot be used as a function
+   80 |     t_enu.z() = tempPose.pose.position.z();
+      |                                          ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:393: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘void TaskManager::Log_pos(Eigen::Vector3d&, Eigen::Vector3d&, Eigen::Vector3d&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:75:42: error: expression cannot be used as a function
+   75 |     enu.x() = local_pose.pose.position.x();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:76:42: error: expression cannot be used as a function
+   76 |     enu.y() = local_pose.pose.position.y();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:77:42: error: expression cannot be used as a function
+   77 |     enu.z() = local_pose.pose.position.z();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:78:42: error: expression cannot be used as a function
+   78 |     t_enu.x() = tempPose.pose.position.x();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:79:42: error: expression cannot be used as a function
+   79 |     t_enu.y() = tempPose.pose.position.y();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:80:42: error: expression cannot be used as a function
+   80 |     t_enu.z() = tempPose.pose.position.z();
+      |                                          ^
+make[2]: *** [CMakeFiles/offboard_pkg_node2.dir/build.make:76: CMakeFiles/offboard_pkg_node2.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/offboard_pkg_node2.dir/all] Error 2
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘void TaskManager::Log_pos(Eigen::Vector3d&, Eigen::Vector3d&, Eigen::Vector3d&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:75:42: error: expression cannot be used as a function
+   75 |     enu.x() = local_pose.pose.position.x();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:76:42: error: expression cannot be used as a function
+   76 |     enu.y() = local_pose.pose.position.y();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:77:42: error: expression cannot be used as a function
+   77 |     enu.z() = local_pose.pose.position.z();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:78:42: error: expression cannot be used as a function
+   78 |     t_enu.x() = tempPose.pose.position.x();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:79:42: error: expression cannot be used as a function
+   79 |     t_enu.y() = tempPose.pose.position.y();
+      |                                          ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:80:42: error: expression cannot be used as a function
+   80 |     t_enu.z() = tempPose.pose.position.z();
+      |                                          ^
+make[2]: *** [CMakeFiles/offboard_pkg_node3.dir/build.make:76: CMakeFiles/offboard_pkg_node3.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/offboard_pkg_node3.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

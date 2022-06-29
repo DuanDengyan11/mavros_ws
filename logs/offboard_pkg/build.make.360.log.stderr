@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:223:29: error: no match for ‘operator=’ (operand types are ‘geometry_msgs::Vector3’ {aka ‘geometry_msgs::Vector3_<std::allocator<void> >’} and ‘<brace-enclosed initializer list>’)
+  223 |                 vel = {5,0,0};
+      |                             ^
+In file included from /opt/ros/noetic/include/mavros_msgs/GlobalPositionTarget.h:19,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:8,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note: candidate: ‘constexpr geometry_msgs::Vector3_<std::allocator<void> >& geometry_msgs::Vector3_<std::allocator<void> >::operator=(const geometry_msgs::Vector3_<std::allocator<void> >&)’
+   22 | struct Vector3_
+      |        ^~~~~~~~
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note:   no known conversion for argument 1 from ‘<brace-enclosed initializer list>’ to ‘const geometry_msgs::Vector3_<std::allocator<void> >&’
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note: candidate: ‘constexpr geometry_msgs::Vector3_<std::allocator<void> >& geometry_msgs::Vector3_<std::allocator<void> >::operator=(geometry_msgs::Vector3_<std::allocator<void> >&&)’
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note:   no known conversion for argument 1 from ‘<brace-enclosed initializer list>’ to ‘geometry_msgs::Vector3_<std::allocator<void> >&&’
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

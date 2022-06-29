@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:211:75: error: ‘s’ has not been declared
+  211 | void MultiBody::Init_lla_circle(double yaw_d, Eigen::Vector3d &lla_lead0, s)
+      |                                                                           ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:211:6: error: no declaration matches ‘void MultiBody::Init_lla_circle(double, Eigen::Vector3d&, int)’
+  211 | void MultiBody::Init_lla_circle(double yaw_d, Eigen::Vector3d &lla_lead0, s)
+      |      ^~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:30:10: note: candidate is: ‘void MultiBody::Init_lla_circle(double, Eigen::Vector3d&)’
+   30 |     void Init_lla_circle(double yaw_d, Eigen::Vector3d &lla_lead0);
+      |          ^~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

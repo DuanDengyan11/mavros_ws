@@ -1,0 +1,52 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:7:49: error: no matching function for call to ‘ros::NodeHandle::param(const char [11], bool&, int)’
+    7 |     private_nh.param("exist_load", exist_load, 0);
+      |                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note: candidate: ‘template<class T> bool ros::NodeHandle::param(const string&, T&, const T&) const’
+ 2120 |   bool param(const std::string& param_name, T& param_val, const T& default_val) const
+      |        ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:7:49: note:   deduced conflicting types for parameter ‘const T’ (‘bool’ and ‘int’)
+    7 |     private_nh.param("exist_load", exist_load, 0);
+      |                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note: candidate: ‘template<class T> T ros::NodeHandle::param(const string&, const T&) const’
+ 2153 |   T param(const std::string& param_name, const T& default_val) const
+      |     ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:7:49: note:   candidate expects 2 arguments, 3 provided
+    7 |     private_nh.param("exist_load", exist_load, 0);
+      |                                                 ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:13:5: error: ‘init_uav’ was not declared in this scope
+   13 |     init_uav();
+      |     ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:14:5: error: ‘GetRosData’ was not declared in this scope
+   14 |     GetRosData();
+      |     ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:17:6: error: no declaration matches ‘void MultiBody::init_uav()’
+   17 | void MultiBody::init_uav()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:17:6: note: no functions named ‘void MultiBody::init_uav()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:26:6: error: no declaration matches ‘void MultiBody::GetRosData()’
+   26 | void MultiBody::GetRosData()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:26:6: note: no functions named ‘void MultiBody::GetRosData()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

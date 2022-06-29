@@ -1,0 +1,13 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:255:46: error: no matching function for call to ‘TaskManager::publish_lla(Eigen::Vector3d&, int&)’
+  255 |             uav[i].publish_lla(lla,change_yaw);
+      |                                              ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:98:10: note: candidate: ‘void TaskManager::publish_lla(Eigen::Vector3d&, double, bool)’
+   98 |     void publish_lla(Eigen::Vector3d &pos, double yaw_d, bool change_yaw);
+      |          ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:98:10: note:   candidate expects 3 arguments, 2 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

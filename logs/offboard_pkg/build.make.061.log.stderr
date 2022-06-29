@@ -1,0 +1,7 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:127:164: error: expected primary-expression before ‘)’ token
+  127 |                        distance = uav[i].calcGPSDistance(local_lla[i].x(), local_lla[i].y(), local_lla[i].z(),local_lla[j].x(), local_lla[j].y(), local_lla[j].z(),);
+      |                                                                                                                                                                    ^
+make[2]: *** [CMakeFiles/main.dir/build.make:63: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

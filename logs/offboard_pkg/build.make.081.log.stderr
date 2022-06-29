@@ -1,0 +1,16 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘void TaskManager::get_att(double&, tf::Quaternion&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:56:11: error: assignment of read-only location ‘(& q)->tf::Quaternion::<anonymous>.tf::QuadWord::x()’
+   56 |     q.x() = local_pose.pose.orientation.x;
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:57:11: error: assignment of read-only location ‘(& q)->tf::Quaternion::<anonymous>.tf::QuadWord::y()’
+   57 |     q.y() = local_pose.pose.orientation.y;
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:58:11: error: assignment of read-only location ‘(& q)->tf::Quaternion::<anonymous>.tf::QuadWord::z()’
+   58 |     q.z() = local_pose.pose.orientation.z;
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:59:11: error: assignment of read-only location ‘(& q)->tf::Quaternion::<anonymous>.tf::QuadWord::w()’
+   59 |     q.w() = local_pose.pose.orientation.w;
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

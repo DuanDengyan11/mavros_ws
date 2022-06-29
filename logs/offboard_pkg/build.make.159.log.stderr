@@ -1,0 +1,77 @@
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+    1 | #include [01;31m[KMultiBody[m[K.h
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiBody[m[K’ does not name a type
+    3 | [01;31m[KMultiBody[m[K::MultiBody(/* args */)
+      | [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:16:6:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiBody[m[K’ has not been declared
+   16 | void [01;31m[KMultiBody[m[K::init_uav()
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:[m[K In function ‘[01m[Kvoid init_uav()[m[K’:
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskManager[m[K’ was not declared in this scope
+   18 |     [01;31m[KTaskManager[m[K uav0;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:19:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ was not declared in this scope
+   19 |     for ([01;31m[Ksize_t[m[K i = 0; i < nVehicle; i++)
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+  +++ |+[32m[K#include <cstddef>[m[K
+    1 | #include MultiBody.h
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:19:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   19 |     for (size_t i = 0; [01;31m[Ki[m[K < nVehicle; i++)
+      |                        [01;31m[K^[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:19:28:[m[K [01;31m[Kerror: [m[K‘[01m[KnVehicle[m[K’ was not declared in this scope
+   19 |     for (size_t i = 0; i < [01;31m[KnVehicle[m[K; i++)
+      |                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav[m[K’ was not declared in this scope
+   21 |         [01;31m[Kuav[m[K.push_back(uav0);
+      |         [01;31m[K^~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:21:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav0[m[K’ was not declared in this scope
+   21 |         uav.push_back([01;31m[Kuav0[m[K);
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:[m[K At global scope:
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:25:6:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiBody[m[K’ has not been declared
+   25 | void [01;31m[KMultiBody[m[K::GetRosData()
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:[m[K In function ‘[01m[Kvoid GetRosData()[m[K’:
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:27:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   27 |     std::[01;31m[Kstring[m[K s0 = "/uav", s;
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+  +++ |+[32m[K#include <string>[m[K
+    1 | #include MultiBody.h
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:28:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ was not declared in this scope
+   28 |     for ([01;31m[Ksize_t[m[K i = 0; i < nVehicle; i++){
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:28:10:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:28:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   28 |     for (size_t i = 0; [01;31m[Ki[m[K < nVehicle; i++){
+      |                        [01;31m[K^[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:28:28:[m[K [01;31m[Kerror: [m[K‘[01m[KnVehicle[m[K’ was not declared in this scope
+   28 |     for (size_t i = 0; i < [01;31m[KnVehicle[m[K; i++){
+      |                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:30:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+   30 |             [01;31m[Ks[m[K = "";
+      |             [01;31m[K^[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+   32 |             [01;31m[Ks[m[K = s0 +  to_string(i);
+      |             [01;31m[K^[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:32:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ks0[m[K’ was not declared in this scope
+   32 |             s = [01;31m[Ks0[m[K +  to_string(i);
+      |                 [01;31m[K^~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:32:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kto_string[m[K’ was not declared in this scope
+   32 |             s = s0 +  [01;31m[Kto_string[m[K(i);
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav[m[K’ was not declared in this scope
+   34 |         [01;31m[Kuav[m[K[i].RosData(s);
+      |         [01;31m[K^~~[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:34:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+   34 |         uav[i].RosData([01;31m[Ks[m[K);
+      |                        [01;31m[K^[m[K
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:[m[K At global scope:
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:38:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiBody[m[K’ does not name a type
+   38 | [01;31m[KMultiBody[m[K::~MultiBody()
+      | [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

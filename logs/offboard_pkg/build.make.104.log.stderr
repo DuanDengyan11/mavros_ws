@@ -1,0 +1,24 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:12:16: error: missing template arguments before ‘(’ token
+   12 |     std::vector(double) length;
+      |                ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:12:17: error: expected primary-expression before ‘double’
+   12 |     std::vector(double) length;
+      |                 ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:22:20: error: ‘class ros::NodeHandle’ has no member named ‘getparam’; did you mean ‘getParam’?
+   22 |         private_nh.getparam("length", length_list);
+      |                    ^~~~~~~~
+      |                    getParam
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:23:34: error: invalid initialization of reference of type ‘std::vector<double>&’ from expression of type ‘double’
+   23 |         Init_length(length_list, length)
+      |                                  ^~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:3:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/multi.cpp:4:73: note: in passing argument 2 of ‘void Init_length(XmlRpc::XmlRpcValue&, std::vector<double>&)’
+    4 | void Init_length(XmlRpc::XmlRpcValue &length_list, std::vector<double> &length)
+      |                                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:122:68: error: invalid types ‘double[size_t {aka long unsigned int}]’ for array subscript
+  122 |                 ned[i] = uav[i].get_ned(theta_d, yaw_d, R, length[i], angle_d[i]);
+      |                                                                    ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

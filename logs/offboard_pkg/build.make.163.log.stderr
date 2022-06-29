@@ -1,0 +1,12 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::init_uav()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:22:13: error: request for member ‘push_back’ in ‘((MultiBody*)this)->MultiBody::uav’, which is of pointer type ‘std::vector<TaskManager>*’ (maybe you meant to use ‘->’ ?)
+   22 |         uav.push_back(uav0);
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::GetRosData()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:35:16: error: ‘class std::vector<TaskManager>’ has no member named ‘RosData’
+   35 |         uav[i].RosData(s);
+      |                ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

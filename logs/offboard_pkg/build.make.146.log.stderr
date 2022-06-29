@@ -1,0 +1,8 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:31:9: error: ‘Init_angle_d’ was not declared in this scope
+   31 |         Init_angle_d(angle_section_list, angle_section, nVehicle);
+      |         ^~~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

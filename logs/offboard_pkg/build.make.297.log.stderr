@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:199:63: error: ‘change_yaw_circle’ was not declared in this scope
+  199 |             if(uav[i].is_GPS_line_succuss(uav[i].lla_line[k], change_yaw_circle))
+      |                                                               ^~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘bool TaskManager::is_GPS_line_succuss(mavros_msgs::GlobalPositionTarget&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:233:9: error: ‘GPS_succuss’ was not declared in this scope; did you mean ‘is_GPS_succuss’?
+  233 |         GPS_succuss = true;
+      |         ^~~~~~~~~~~
+      |         is_GPS_succuss
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:235:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  235 | }
+      | ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

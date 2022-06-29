@@ -1,0 +1,14 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::AllWayPoints()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:157:35: error: no matching function for call to ‘TaskManager::isWaypoint(size_t&)’
+  157 |             if(uav[i].isWaypoint(k)) {j = j+1;}
+      |                                   ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:83:10: note: candidate: ‘bool TaskManager::isWaypoint(int, bool)’
+   83 |     bool isWaypoint(int i, bool yaw_based_input);
+      |          ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:83:10: note:   candidate expects 2 arguments, 1 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

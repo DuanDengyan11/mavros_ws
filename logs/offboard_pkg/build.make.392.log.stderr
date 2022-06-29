@@ -1,0 +1,14 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle_Time()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:325:33: error: cannot convert ‘ros::Time’ to ‘double’ in assignment
+  325 |         T_begin = ros::Time::now();
+      |                   ~~~~~~~~~~~~~~^~
+      |                                 |
+      |                                 ros::Time
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:330:34: error: cannot convert ‘ros::Time’ to ‘double’ in initialization
+  330 |     double T_now = ros::Time::now();
+      |                    ~~~~~~~~~~~~~~^~
+      |                                  |
+      |                                  ros::Time
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

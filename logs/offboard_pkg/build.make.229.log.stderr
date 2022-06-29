@@ -1,0 +1,33 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:67: error: stray ‘\357’ in program
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                   ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:68: error: stray ‘\274’ in program
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                    ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:69: error: stray ‘\233’ in program
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                     ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:66: error: expected ‘;’ at end of member declaration
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                  ^
+      |                                                                   ;
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:67: error: stray ‘\357’ in program
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                   ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:68: error: stray ‘\274’ in program
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                    ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:69: error: stray ‘\233’ in program
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                     ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:26:66: error: expected ‘;’ at end of member declaration
+   26 |     void Init_length_angle(XmlRpc::XmlRpcValue &length_angle_list)；
+      |                                                                  ^
+      |                                                                   ;
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,59 @@
+nVehicle: 1
+exist_load: 0
+
+change_yaw: 0
+# length_angle:
+# - [10.0, 180.0, 45.0]
+# - [10.0, 0.0, 45.0]
+# exist_load 0
+length_angle:
+- [0.0, 0.0, 0.0]
+# - [10.0, 0.0, 0.0]
+# nSample:1 T:0
+nSampleOrT: 1
+# ned:1 lla:0
+nedOrlla: 1
+yaw_target: 90.0
+
+# safe
+safe_error_dis:
+- [2.5, 0.5]
+# - [2.5, 0.5]
+
+# takeoff
+height:
+- [6.0, 2.0]
+# - [4.0, 2.0]
+
+# Way points
+exist_waypoint: 1
+nWayPoints: 2
+#1 local; 0 global
+LocalWayPoints:
+# row:nwaypoints
+# column:nVehicle*4(x, y, z, yaw, ENU)relative to home
+# now yaw is not used
+# - [0.0, 0.0, 6.0, 0.0]
+ - [0.0, 10.0, 6.0, 0.0]
+ - [10.0, 10.0, 6.0, 0.0]
+#- [10.0, 0.0, 6.0, 0.0]
+#- [0.0, 0.0, 6.0, 0.0]
+# - [0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+# - [5.0, 0.0, 5.0, 0.0, 5.0, 0.0, 5.0, 0.0]
+# - [5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 0.0]
+# - [0.0, 5.0, 5.0, 0.0, 0.0, 5.0, 5.0, 0.0]
+# - [0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+
+# Flight GPS line 
+exist_line: 0
+T_line: 5
+nSample_line: 5
+dis_line: 10
+
+# Flight GPS circle
+exist_circle: 0
+T_circle: 60
+nSample_circle: 13
+R: 10
+
+

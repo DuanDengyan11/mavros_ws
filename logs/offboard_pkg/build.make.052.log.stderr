@@ -1,0 +1,4 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘bool TaskManager::is_GPS_succuss(Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:202:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  202 | }
+      | ^

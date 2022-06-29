@@ -1,0 +1,523 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle_Time()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:332:35: error: no match for ‘operator*’ (operand types are ‘double’ and ‘ros::Duration’)
+  332 |     double theta_d = 2 * M_PI * f * (T_now-T_begin) * (180.0 / M_PI);
+      |                      ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~
+      |                               |           |
+      |                               double      ros::Duration
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:391:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)’
+  391 |     operator*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:391:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:332:51: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+  332 |     double theta_d = 2 * M_PI * f * (T_now-T_begin) * (180.0 / M_PI);
+      |                                                   ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:400:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)’
+  400 |     operator*(const complex<_Tp>& __x, const _Tp& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:400:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:332:51: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+  332 |     double theta_d = 2 * M_PI * f * (T_now-T_begin) * (180.0 / M_PI);
+      |                                                   ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:409:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)’
+  409 |     operator*(const _Tp& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:409:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:332:51: note:   ‘ros::Duration’ is not derived from ‘const std::complex<_Tp>’
+  332 |     double theta_d = 2 * M_PI * f * (T_now-T_begin) * (180.0 / M_PI);
+      |                                                   ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:26: error: no match for ‘operator>’ (operand types are ‘ros::Duration’ and ‘double’)
+  341 |     if((T_now - T_begin) > T)
+      |        ~~~~~~~~~~~~~~~~~ ^ ~
+      |               |            |
+      |               |            double
+      |               ros::Duration
+In file included from /opt/ros/noetic/include/ros/time.h:57,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/duration.h:88:8: note: candidate: ‘bool ros::DurationBase<T>::operator>(const T&) const [with T = ros::Duration]’
+   88 |   bool operator>(const T &rhs) const;
+      |        ^~~~~~~~
+/opt/ros/noetic/include/ros/duration.h:88:27: note:   no known conversion for argument 1 from ‘double’ to ‘const ros::Duration&’
+   88 |   bool operator>(const T &rhs) const;
+      |                  ~~~~~~~~~^~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:467:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  467 |     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_pair.h:467:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::pair<_T1, _T2>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:343:5: note: candidate: ‘template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  343 |     operator>(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:381:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  381 |     operator>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:381:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:1184:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1184 |     operator>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1184:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:1190:5: note: candidate: ‘template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1190 |     operator>(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1190:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6267:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6267 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6267:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6280:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6280 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6280:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6292:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6292 |     operator>(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6292:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   mismatched types ‘const _CharT*’ and ‘ros::Duration’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/array:270:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  270 |     operator>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+/usr/include/c++/9/array:270:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::array<_Tp, _Nm>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/tuple:1451:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator>(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)’
+ 1451 |     operator>(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/9/tuple:1451:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::tuple<_Tps ...>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:790:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’
+  790 |     operator>(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:790:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:796:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’
+  796 |     operator>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:796:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:802:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)’
+  802 |     operator>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:802:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘double’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/vector:67,
+                 from /usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /usr/include/boost/math/special_functions/round.hpp:15,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_vector.h:1918:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1918 |     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_vector.h:1918:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/noetic/include/ros/console.h:42,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_map.h:1486:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)’
+ 1486 |     operator>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:1486:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/map:62,
+                 from /opt/ros/noetic/include/ros/console.h:42,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_multimap.h:1150:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)’
+ 1150 |     operator>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multimap.h:1150:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/set:61,
+                 from /opt/ros/noetic/include/ros/forwards.h:34,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_set.h:1010:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)’
+ 1010 |     operator>(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_set.h:1010:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::set<_Key, _Compare, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/set:62,
+                 from /opt/ros/noetic/include/ros/forwards.h:34,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_multiset.h:995:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)’
+  995 |     operator>(const multiset<_Key,_Compare,_Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multiset.h:995:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::multiset<_Key, _Compare, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/list:63,
+                 from /opt/ros/noetic/include/ros/forwards.h:35,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_list.h:2038:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’
+ 2038 |     operator>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_list.h:2038:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1487:5: note: candidate: ‘template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)’
+ 1487 |     operator>(const __shared_ptr<_Tp1, _Lp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1487:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1493:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)’
+ 1493 |     operator>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1493:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1498:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)’
+ 1498 |     operator>(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1498:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   mismatched types ‘const std::__shared_ptr<_Tp, _Lp>’ and ‘double’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:454:5: note: candidate: ‘template<class _Tp, class _Up> bool std::operator>(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)’
+  454 |     operator>(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:454:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::shared_ptr<_Tp>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:459:5: note: candidate: ‘template<class _Tp> bool std::operator>(const std::shared_ptr<_Tp>&, std::nullptr_t)’
+  459 |     operator>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:459:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::shared_ptr<_Tp>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:464:5: note: candidate: ‘template<class _Tp> bool std::operator>(std::nullptr_t, const std::shared_ptr<_Tp>&)’
+  464 |     operator>(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:464:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   mismatched types ‘const std::shared_ptr<_Tp>’ and ‘double’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/boost/detail/container_fwd.hpp:91,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_deque.h:327:5: note: candidate: ‘template<class _Tp, class _Ref, class _Ptr> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)’
+  327 |     operator>(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:327:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/boost/detail/container_fwd.hpp:91,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_deque.h:334:5: note: candidate: ‘template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)’
+  334 |     operator>(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:334:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/boost/detail/container_fwd.hpp:91,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/stl_deque.h:2345:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’
+ 2345 |     operator>(const deque<_Tp, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:2345:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:341:28: note:   ‘ros::Duration’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+  341 |     if((T_now - T_begin) > T)
+      |                            ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

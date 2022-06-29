@@ -1,0 +1,20 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:47:25: error: ‘constexpr’ needed for in-class initialization of static data member ‘const double TaskManager::DEG_TO_RAD’ of non-integral type [-fpermissive]
+   47 |     static const double DEG_TO_RAD = (M_PI / 180.0);
+      |                         ^~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:47:25: error: ‘constexpr’ needed for in-class initialization of static data member ‘const double TaskManager::DEG_TO_RAD’ of non-integral type [-fpermissive]
+   47 |     static const double DEG_TO_RAD = (M_PI / 180.0);
+      |                         ^~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:47:25: error: ‘constexpr’ needed for in-class initialization of static data member ‘const double TaskManager::DEG_TO_RAD’ of non-integral type [-fpermissive]
+   47 |     static const double DEG_TO_RAD = (M_PI / 180.0);
+      |                         ^~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

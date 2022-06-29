@@ -1,0 +1,18 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:224:23: error: no match for ‘operator=’ (operand types are ‘geometry_msgs::Vector3’ {aka ‘geometry_msgs::Vector3_<std::allocator<void> >’} and ‘Eigen::Vector3d’ {aka ‘Eigen::Matrix<double, 3, 1>’})
+  224 |                 vel = vel_lead0;
+      |                       ^~~~~~~~~
+In file included from /opt/ros/noetic/include/geometry_msgs/Twist.h:18,
+                 from /opt/ros/noetic/include/geometry_msgs/TwistStamped.h:19,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:3,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note: candidate: ‘constexpr geometry_msgs::Vector3_<std::allocator<void> >& geometry_msgs::Vector3_<std::allocator<void> >::operator=(const geometry_msgs::Vector3_<std::allocator<void> >&)’
+   22 | struct Vector3_
+      |        ^~~~~~~~
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note:   no known conversion for argument 1 from ‘Eigen::Vector3d’ {aka ‘Eigen::Matrix<double, 3, 1>’} to ‘const geometry_msgs::Vector3_<std::allocator<void> >&’
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note: candidate: ‘constexpr geometry_msgs::Vector3_<std::allocator<void> >& geometry_msgs::Vector3_<std::allocator<void> >::operator=(geometry_msgs::Vector3_<std::allocator<void> >&&)’
+/opt/ros/noetic/include/geometry_msgs/Vector3.h:22:8: note:   no known conversion for argument 1 from ‘Eigen::Vector3d’ {aka ‘Eigen::Matrix<double, 3, 1>’} to ‘geometry_msgs::Vector3_<std::allocator<void> >&&’
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,66 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:24:42: error: no matching function for call to ‘MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&)’
+   24 |         Init_LocalWayPoints(waypoint_list);
+      |                                          ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:20:10: note: candidate: ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&, int, int)’
+   20 |     void Init_LocalWayPoints(XmlRpc::XmlRpcValue &waypoint, int nVehicle, int nWayPoints);
+      |          ^~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:20:10: note:   candidate expects 3 arguments, 1 provided
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:28:37: error: expected initializer before ‘angle_section_list’
+   28 |     XmlRpc::XmlRpcValue length_list angle_section_list angle_cone_list;
+      |                                     ^~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:33:39: error: ‘length_list’ was not declared in this scope
+   33 |         private_nh.getParam("length", length_list);
+      |                                       ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:34:9: error: ‘Init_length’ was not declared in this scope
+   34 |         Init_length(length_list);
+      |         ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:35:46: error: ‘angle_section_list’ was not declared in this scope
+   35 |         private_nh.getParam("angle_section", angle_section_list);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:36:9: error: ‘Init_angle_section’ was not declared in this scope
+   36 |         Init_angle_section(angle_section_list);
+      |         ^~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:37:43: error: ‘angle_cone_list’ was not declared in this scope
+   37 |         private_nh.getParam("angle_cone", angle_cone_list);
+      |                                           ^~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:38:9: error: ‘Init_angle_cone’ was not declared in this scope
+   38 |         Init_angle_cone(angle_cone_list);
+      |         ^~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In function ‘void Init_length(XmlRpc::XmlRpcValue&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:45:8: error: ‘nVehicle’ was not declared in this scope
+   45 |     if(nVehicle!=length_list.size())
+      |        ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:52:9: error: ‘uav’ was not declared in this scope
+   52 |         uav[i].length = data_list[0];
+      |         ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In function ‘void Init_angle_section(XmlRpc::XmlRpcValue&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:58:8: error: ‘nVehicle’ was not declared in this scope
+   58 |     if(nVehicle!=angle_d_list.size())
+      |        ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:65:9: error: ‘uav’ was not declared in this scope
+   65 |         uav[i].angle_section = data_list[0];
+      |         ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In function ‘void Init_angle_cone(XmlRpc::XmlRpcValue&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:71:8: error: ‘nVehicle’ was not declared in this scope
+   71 |     if(nVehicle!=angle_d_list.size())
+      |        ^~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:78:9: error: ‘uav’ was not declared in this scope
+   78 |         uav[i].angle_cone = data_list[0];
+      |         ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:82:6: error: no declaration matches ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&)’
+   82 | void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue &waypoint)
+      |      ^~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:20:10: note: candidate is: ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&, int, int)’
+   20 |     void Init_LocalWayPoints(XmlRpc::XmlRpcValue &waypoint, int nVehicle, int nWayPoints);
+      |          ^~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

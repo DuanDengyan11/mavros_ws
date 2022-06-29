@@ -1,0 +1,33 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::gps_mission_init(double&, geometry_msgs::Quaternion&, Eigen::Vector3d&, MultiBody::mission_type)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:246:60: error: no matching function for call to ‘TaskManager::is_enu_success(Eigen::Vector3d&, double&, bool)’
+  246 |                 if (uav[i].is_enu_success(enu, yaw_d, false))
+      |                                                            ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:109:10: note: candidate: ‘bool TaskManager::is_enu_success(Eigen::Vector3d&, bool)’
+  109 |     bool is_enu_success(Eigen::Vector3d &enu, bool yaw_based_input);
+      |          ^~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:109:10: note:   candidate expects 2 arguments, 3 provided
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:301:69: error: no matching function for call to ‘TaskManager::is_enu_success(Eigen::Vector3d&, double&, int&)’
+  301 |                     if (uav[i].is_enu_success(enu, yaw_d, change_yaw))
+      |                                                                     ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:109:10: note: candidate: ‘bool TaskManager::is_enu_success(Eigen::Vector3d&, bool)’
+  109 |     bool is_enu_success(Eigen::Vector3d &enu, bool yaw_based_input);
+      |          ^~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:109:10: note:   candidate expects 2 arguments, 3 provided
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:384:69: error: no matching function for call to ‘TaskManager::is_enu_success(Eigen::Vector3d&, double&, int&)’
+  384 |                     if (uav[i].is_enu_success(enu, yaw_d, change_yaw))
+      |                                                                     ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:109:10: note: candidate: ‘bool TaskManager::is_enu_success(Eigen::Vector3d&, bool)’
+  109 |     bool is_enu_success(Eigen::Vector3d &enu, bool yaw_based_input);
+      |          ^~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:109:10: note:   candidate expects 2 arguments, 3 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

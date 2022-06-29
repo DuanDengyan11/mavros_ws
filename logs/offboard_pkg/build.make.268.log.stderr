@@ -1,0 +1,203 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:24:13: error: expected ‘}’ before ‘;’ token
+   24 |       circle;
+      |             ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:23:14: note: to match this ‘{’
+   23 |     enum type{
+      |              ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:25:7: error: ‘line’ does not name a type; did you mean ‘link’?
+   25 |       line;
+      |       ^~~~
+      |       link
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:35:1: error: expected unqualified-id before ‘public’
+   35 | public:
+      | ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:38:17: error: expected constructor, destructor, or type conversion before ‘;’ token
+   38 |     ~MultiBody();
+      |                 ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:46:1: error: expected declaration before ‘}’ token
+   46 | };
+      | ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:3:32: error: definition of implicitly-declared ‘MultiBody::MultiBody()’
+    3 | MultiBody::MultiBody(/* args */)
+      |                                ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:47:6: error: no declaration matches ‘bool MultiBody::WaitAllFCU()’
+   47 | bool MultiBody::WaitAllFCU()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:47:6: note: no functions named ‘bool MultiBody::WaitAllFCU()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:68:7: error: no declaration matches ‘bool MultiBody::WaitAllGPS()’
+   68 | bool  MultiBody::WaitAllGPS()
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:68:7: note: no functions named ‘bool MultiBody::WaitAllGPS()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:89:6: error: no declaration matches ‘bool MultiBody::AllTakeoff()’
+   89 | bool MultiBody::AllTakeoff()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:89:6: note: no functions named ‘bool MultiBody::AllTakeoff()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:110:6: error: no declaration matches ‘bool MultiBody::AllLand()’
+  110 | bool MultiBody::AllLand()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:110:6: note: no functions named ‘bool MultiBody::AllLand()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:130:6: error: no declaration matches ‘bool MultiBody::AllWayPoints()’
+  130 | bool MultiBody::AllWayPoints()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:130:6: note: no functions named ‘bool MultiBody::AllWayPoints()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:160:6: error: no declaration matches ‘bool MultiBody::FlightCircle()’
+  160 | bool MultiBody::FlightCircle()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:160:6: note: no functions named ‘bool MultiBody::FlightCircle()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:211:75: error: ‘s’ has not been declared
+  211 | void MultiBody::Init_lla_circle(double yaw_d, Eigen::Vector3d &lla_lead0, s)
+      |                                                                           ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:211:6: error: no declaration matches ‘void MultiBody::Init_lla_circle(double, Eigen::Vector3d&, int)’
+  211 | void MultiBody::Init_lla_circle(double yaw_d, Eigen::Vector3d &lla_lead0, s)
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:211:6: note: no functions named ‘void MultiBody::Init_lla_circle(double, Eigen::Vector3d&, int)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:227:6: error: no declaration matches ‘bool MultiBody::is_safe()’
+  227 | bool MultiBody::is_safe()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:227:6: note: no functions named ‘bool MultiBody::is_safe()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:249:6: error: no declaration matches ‘void MultiBody::Init_height(XmlRpc::XmlRpcValue&)’
+  249 | void MultiBody::Init_height(XmlRpc::XmlRpcValue &height_list)
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:249:6: note: no functions named ‘void MultiBody::Init_height(XmlRpc::XmlRpcValue&)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:262:6: error: no declaration matches ‘void MultiBody::Init_length_angle_circle(XmlRpc::XmlRpcValue&)’
+  262 | void MultiBody::Init_length_angle_circle(XmlRpc::XmlRpcValue &length_angle_circle_list)
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:262:6: note: no functions named ‘void MultiBody::Init_length_angle_circle(XmlRpc::XmlRpcValue&)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:277:6: error: no declaration matches ‘void MultiBody::Init_safe_error_dis(XmlRpc::XmlRpcValue&)’
+  277 | void MultiBody::Init_safe_error_dis(XmlRpc::XmlRpcValue &safe_error_dis_list)
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:277:6: note: no functions named ‘void MultiBody::Init_safe_error_dis(XmlRpc::XmlRpcValue&)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:291:6: error: no declaration matches ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&)’
+  291 | void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue &waypoint)
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:291:6: note: no functions named ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:324:6: error: no declaration matches ‘void MultiBody::init_uav()’
+  324 | void MultiBody::init_uav()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:324:6: note: no functions named ‘void MultiBody::init_uav()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:333:6: error: no declaration matches ‘void MultiBody::GetRosData()’
+  333 | void MultiBody::GetRosData()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:333:6: note: no functions named ‘void MultiBody::GetRosData()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:346:23: error: definition of implicitly-declared ‘MultiBody::~MultiBody()’
+  346 | MultiBody::~MultiBody()
+      |                       ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:24:13: error: expected ‘}’ before ‘;’ token
+   24 |       circle;
+      |             ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:23:14: note: to match this ‘{’
+   23 |     enum type{
+      |              ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:25:7: error: ‘line’ does not name a type; did you mean ‘link’?
+   25 |       line;
+      |       ^~~~
+      |       link
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:35:1: error: expected unqualified-id before ‘public’
+   35 | public:
+      | ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:38:17: error: expected constructor, destructor, or type conversion before ‘;’ token
+   38 |     ~MultiBody();
+      |                 ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:46:1: error: expected declaration before ‘}’ token
+   46 | };
+      | ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:13:19: error: ‘class MultiBody’ has no member named ‘WaitAllFCU’
+   13 |         if(!multi.WaitAllFCU())
+      |                   ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:17:23: error: ‘class MultiBody’ has no member named ‘WaitAllGPS’
+   17 |             if(!multi.WaitAllGPS())
+      |                       ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:21:27: error: ‘class MultiBody’ has no member named ‘AllTakeoff’
+   21 |                 if(!multi.AllTakeoff())
+      |                           ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:25:31: error: ‘class MultiBody’ has no member named ‘AllWayPoints’; did you mean ‘int MultiBody::nWayPoints’? (not accessible from this context)
+   25 |                     if(!multi.AllWayPoints())
+      |                               ^~~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:14:9: note: declared private here
+   14 |     int nWayPoints;
+      |         ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:29:35: error: ‘class MultiBody’ has no member named ‘FlightCircle’
+   29 |                         if(!multi.FlightCircle())
+      |                                   ^~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:38:27: error: ‘class MultiBody’ has no member named ‘is_safe’
+   38 |                 if(!multi.is_safe())
+      |                           ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:56:19: error: ‘class MultiBody’ has no member named ‘AllLand’
+   56 |         if(!multi.AllLand())
+      |                   ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:88:17: error: no declaration matches ‘Eigen::Vector3d TaskManager::get_ned(double, double, double)’
+   88 | Eigen::Vector3d TaskManager::get_ned(double theta_d, double yaw_d, double R)
+      |                 ^~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:77:21: note: candidate is: ‘Eigen::Vector3d TaskManager::get_ned(double, double, double, std::string&)’
+   77 |     Eigen::Vector3d get_ned(double theta_d, double yaw_d, double R, std::string &type);
+      |                     ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

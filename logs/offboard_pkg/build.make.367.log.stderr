@@ -1,0 +1,8 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lead_points_line(XmlRpc::XmlRpcValue&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:328:28: error: ambiguous overload for ‘operator*’ (operand types are ‘XmlRpc::XmlRpcValue’ and ‘double’)
+  328 |         yaw = data_list[3] * (M_PI / 180.0);
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:328:28: note: candidate: ‘operator*(double, double)’ <built-in>
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:328:28: note: candidate: ‘operator*(int, double)’ <built-in>
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

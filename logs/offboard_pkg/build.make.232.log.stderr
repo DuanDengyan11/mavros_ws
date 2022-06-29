@@ -1,0 +1,21 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:193:23: error: ‘__gnu_cxx::__alloc_traits<std::allocator<TaskManager>, TaskManager>::value_type’ {aka ‘class TaskManager’} has no member named ‘is_GPS_succuss’; did you mean ‘is_GPS_circle_succuss’?
+  193 |             if(uav[i].is_GPS_succuss(lla[i])){j = j+1;}
+      |                       ^~~~~~~~~~~~~~
+      |                       is_GPS_circle_succuss
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lla_circle(double)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:216:9: error: ‘theta_d’ was not declared in this scope
+  216 |         theta_d = 360.0/(nSample-1)*k;
+      |         ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:219:13: error: ‘ned’ was not declared in this scope
+  219 |             ned = uav[i].get_ned(theta_d, yaw_d, R);
+      |             ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:220:33: error: ‘lla_lead0’ was not declared in this scope
+  220 |             uav[i].ned2lla(ned, lla_lead0, lla);
+      |                                 ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:220:44: error: ‘lla’ was not declared in this scope
+  220 |             uav[i].ned2lla(ned, lla_lead0, lla);
+      |                                            ^~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

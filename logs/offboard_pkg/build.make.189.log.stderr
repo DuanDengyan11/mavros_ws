@@ -1,0 +1,44 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:8:20: error: expected identifier before numeric constant
+    8 |     ros::Rate rate(5.0);
+      |                    ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:8:20: error: expected ‘,’ or ‘...’ before numeric constant
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:11:9: error: ‘rate’ was not declared in this scope
+   11 |         rate.sleep();
+      |         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:18:9: error: ‘rate’ was not declared in this scope
+   18 |         rate.sleep();
+      |         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:25:9: error: ‘rate’ was not declared in this scope
+   25 |         rate.sleep();
+      |         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:32:9: error: ‘rate’ was not declared in this scope
+   32 |         rate.sleep();
+      |         ^~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:8:20: error: expected identifier before numeric constant
+    8 |     ros::Rate rate(5.0);
+      |                    ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:8:20: error: expected ‘,’ or ‘...’ before numeric constant
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::WaitAllFCU()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:59:5: error: invalid use of member function ‘ros::Rate MultiBody::rate(int)’ (did you forget the ‘()’ ?)
+   59 |     rate.sleep();
+      |     ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::WaitAllGPS()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:75:5: error: invalid use of member function ‘ros::Rate MultiBody::rate(int)’ (did you forget the ‘()’ ?)
+   75 |     rate.sleep();
+      |     ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::AllTakeoff()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:90:5: error: invalid use of member function ‘ros::Rate MultiBody::rate(int)’ (did you forget the ‘()’ ?)
+   90 |     rate.sleep();
+      |     ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::AllWayPoints()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:114:13: error: invalid use of member function ‘ros::Rate MultiBody::rate(int)’ (did you forget the ‘()’ ?)
+  114 |             rate.sleep();
+      |             ^~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

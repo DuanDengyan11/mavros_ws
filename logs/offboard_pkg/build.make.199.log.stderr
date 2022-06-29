@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:11:9: error: ‘rate’ was not declared in this scope
+   11 |         rate.sleep();
+      |         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:18:9: error: ‘rate’ was not declared in this scope
+   18 |         rate.sleep();
+      |         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:25:9: error: ‘rate’ was not declared in this scope
+   25 |         rate.sleep();
+      |         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:32:9: error: ‘rate’ was not declared in this scope
+   32 |         rate.sleep();
+      |         ^~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,13 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::get_vel()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:223:25: error: ‘geometry_msgs::TwistStamped’ {aka ‘struct geometry_msgs::TwistStamped_<std::allocator<void> >’} has no member named ‘linear’
+  223 |     vel.x() = local_vel.linear.x;
+      |                         ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:224:25: error: ‘geometry_msgs::TwistStamped’ {aka ‘struct geometry_msgs::TwistStamped_<std::allocator<void> >’} has no member named ‘linear’
+  224 |     vel.y() = local_vel.linear.y;
+      |                         ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:225:25: error: ‘geometry_msgs::TwistStamped’ {aka ‘struct geometry_msgs::TwistStamped_<std::allocator<void> >’} has no member named ‘linear’
+  225 |     vel.z() = local_vel.linear.z;
+      |                         ^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

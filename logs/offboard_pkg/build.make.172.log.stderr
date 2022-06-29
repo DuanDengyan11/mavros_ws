@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:28:37: error: expected initializer before ‘angle_section_list’
+   28 |     XmlRpc::XmlRpcValue length_list angle_section_list angle_cone_list;
+      |                                     ^~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:33:39: error: ‘length_list’ was not declared in this scope
+   33 |         private_nh.getParam("length", length_list);
+      |                                       ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:35:46: error: ‘angle_section_list’ was not declared in this scope
+   35 |         private_nh.getParam("angle_section", angle_section_list);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:37:43: error: ‘angle_cone_list’ was not declared in this scope
+   37 |         private_nh.getParam("angle_cone", angle_cone_list);
+      |                                           ^~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

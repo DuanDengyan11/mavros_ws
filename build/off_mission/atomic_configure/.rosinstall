@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/tutu/FControl/mavros_ws/devel/.private/off_mission/setup.sh

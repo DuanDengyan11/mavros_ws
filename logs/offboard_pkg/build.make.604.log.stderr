@@ -1,0 +1,8 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::gps_mission_init(double&, geometry_msgs::Quaternion&, Eigen::Vector3d&, MultiBody::mission_type)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:207:5: error: ‘setHome’ was not declared in this scope; did you mean ‘AllGetHome’?
+  207 |     setHome();
+      |     ^~~~~~~
+      |     AllGetHome
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

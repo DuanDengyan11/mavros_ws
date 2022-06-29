@@ -1,0 +1,7 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lead_points_line(XmlRpc::XmlRpcValue&, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:316:85: error: ‘GeoPos’ was not declared in this scope
+  316 |         lla.altitude = lla_new.z() + GeographicLib::Geoid::ELLIPSOIDTOGEOID * egm96(GeoPos.latitude, GeoPos.longitude);
+      |                                                                                     ^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

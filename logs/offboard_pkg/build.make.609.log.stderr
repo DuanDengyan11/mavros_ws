@@ -1,0 +1,35 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:338:67: error: no matching function for call to ‘TaskManager::publish_enu(Eigen::Vector3d&, double&, double, int&)’
+  338 |                     uav[i].publish_enu(enu, yaw_d, 0.0, change_yaw);
+      |                                                                   ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:110:10: note: candidate: ‘void TaskManager::publish_enu(Eigen::Vector3d&, double, bool)’
+  110 |     void publish_enu(Eigen::Vector3d &enu, double yaw_d, bool change_yaw);
+      |          ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:110:10: note:   candidate expects 3 arguments, 4 provided
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:422:71: error: no matching function for call to ‘TaskManager::publish_enu(Eigen::Vector3d&, double&, double&, int&)’
+  422 |                     uav[i].publish_enu(enu, yaw_d, theta_d, change_yaw);
+      |                                                                       ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:110:10: note: candidate: ‘void TaskManager::publish_enu(Eigen::Vector3d&, double, bool)’
+  110 |     void publish_enu(Eigen::Vector3d &enu, double yaw_d, bool change_yaw);
+      |          ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:110:10: note:   candidate expects 3 arguments, 4 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:334:6: error: no declaration matches ‘void TaskManager::publish_enu(Eigen::Vector3d&, double, double, bool)’
+  334 | void TaskManager::publish_enu(Eigen::Vector3d &enu, double yaw_d, double theta_d, bool change_yaw)
+      |      ^~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:110:10: note: candidate is: ‘void TaskManager::publish_enu(Eigen::Vector3d&, double, bool)’
+  110 |     void publish_enu(Eigen::Vector3d &enu, double yaw_d, bool change_yaw);
+      |          ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:18:7: note: ‘class TaskManager’ defined here
+   18 | class TaskManager
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

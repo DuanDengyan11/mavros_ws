@@ -1,0 +1,26 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:35:27: error: ‘class MultiBody’ has no member named ‘is_safe’
+   35 |                 if(!multi.is_safe())
+      |                           ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::AllWayPoints()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:153:13: error: ‘local_lla’ was not declared in this scope
+  153 |             local_lla[i] = uav[i].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:205:13: error: ‘local_lla’ was not declared in this scope
+  205 |             local_lla[i] = uav[i].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:224:6: error: no declaration matches ‘bool MultiBody::is_safe()’
+  224 | bool MultiBody::is_safe()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:224:6: note: no functions named ‘bool MultiBody::is_safe()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

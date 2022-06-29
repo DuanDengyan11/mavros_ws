@@ -1,0 +1,15 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In function ‘bool FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:310:8: error: ‘nSampleOrT’ was not declared in this scope
+  310 |     if(nSampleOrT)
+      |        ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:312:16: error: ‘FlightCircle_nSample’ was not declared in this scope
+  312 |         return FlightCircle_nSample();
+      |                ^~~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:314:16: error: ‘FlightCircle_Time’ was not declared in this scope; did you mean ‘FlightCircle’?
+  314 |         return FlightCircle_Time();
+      |                ^~~~~~~~~~~~~~~~~
+      |                FlightCircle
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

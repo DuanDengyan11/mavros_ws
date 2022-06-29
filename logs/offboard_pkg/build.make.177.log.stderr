@@ -1,0 +1,43 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main1.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:30:21: error: expected ‘;’ at end of member declaration
+   30 |     bool WaitAllGPS()
+      |                     ^
+      |                      ;
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main1.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:30:21: error: expected ‘;’ at end of member declaration
+   30 |     bool WaitAllGPS()
+      |                     ^
+      |                      ;
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/console.h:384:3: error: expected unqualified-id before ‘do’
+  384 |   do \
+      |   ^~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:69:9: note: in expansion of macro ‘ROS_INFO’
+   69 |         ROS_INFO("waiting for GPS connection ...");
+      |         ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:392:5: error: expected unqualified-id before ‘while’
+  392 |   } while(false)
+      |     ^~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:69:9: note: in expansion of macro ‘ROS_INFO’
+   69 |         ROS_INFO("waiting for GPS connection ...");
+      |         ^~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

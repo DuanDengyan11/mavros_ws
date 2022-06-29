@@ -1,0 +1,10 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘double TaskManager::calcGPSDistance(double, double, double, double, double, double)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:159:25: error: expected unqualified-id before numeric constant
+  159 | #define RADIO_TERRESTRE 6372797.56085
+      |                         ^~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:159:25: note: in definition of macro ‘RADIO_TERRESTRE’
+  159 | #define RADIO_TERRESTRE 6372797.56085
+      |                         ^~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

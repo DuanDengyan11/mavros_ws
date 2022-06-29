@@ -1,0 +1,49 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:16:31: error: no matching function for call to ‘ros::NodeHandle::param(const char [2], double&, int)’
+   16 |     private_nh.param("R", R, 5);
+      |                               ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note: candidate: ‘template<class T> bool ros::NodeHandle::param(const string&, T&, const T&) const’
+ 2120 |   bool param(const std::string& param_name, T& param_val, const T& default_val) const
+      |        ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:16:31: note:   deduced conflicting types for parameter ‘const T’ (‘double’ and ‘int’)
+   16 |     private_nh.param("R", R, 5);
+      |                               ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note: candidate: ‘template<class T> T ros::NodeHandle::param(const string&, const T&) const’
+ 2153 |   T param(const std::string& param_name, const T& default_val) const
+      |     ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:16:31: note:   candidate expects 2 arguments, 3 provided
+   16 |     private_nh.param("R", R, 5);
+      |                               ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:17:36: error: no matching function for call to ‘ros::NodeHandle::param(const char [7], double&, int)’
+   17 |     private_nh.param("length", R, 5);
+      |                                    ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note: candidate: ‘template<class T> bool ros::NodeHandle::param(const string&, T&, const T&) const’
+ 2120 |   bool param(const std::string& param_name, T& param_val, const T& default_val) const
+      |        ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:17:36: note:   deduced conflicting types for parameter ‘const T’ (‘double’ and ‘int’)
+   17 |     private_nh.param("length", R, 5);
+      |                                    ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note: candidate: ‘template<class T> T ros::NodeHandle::param(const string&, const T&) const’
+ 2153 |   T param(const std::string& param_name, const T& default_val) const
+      |     ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:17:36: note:   candidate expects 2 arguments, 3 provided
+   17 |     private_nh.param("length", R, 5);
+      |                                    ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:116:68: error: invalid types ‘double[size_t {aka long unsigned int}]’ for array subscript
+  116 |                 ned[i] = uav[i].get_ned(theta_d, yaw_d, R, length[i], angle_d[i]);
+      |                                                                    ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

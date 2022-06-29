@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle_Time()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:329:38: error: ‘theta_d’ was not declared in this scope
+  329 |                 ned = uav[i].get_ned(theta_d, yaw_d, R);
+      |                                      ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:331:47: error: cannot convert ‘Eigen::Vector3d’ {aka ‘Eigen::Matrix<double, 3, 1>’} to ‘mavros_msgs::GlobalPositionTarget&’ {aka ‘mavros_msgs::GlobalPositionTarget_<std::allocator<void> >&’}
+  331 |                 if(uav[i].is_GPS_line_succuss(lla))
+      |                                               ^~~
+      |                                               |
+      |                                               Eigen::Vector3d {aka Eigen::Matrix<double, 3, 1>}
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:95:65: note:   initializing argument 1 of ‘bool TaskManager::is_GPS_line_succuss(mavros_msgs::GlobalPositionTarget&)’
+   95 |     bool is_GPS_line_succuss(mavros_msgs::GlobalPositionTarget &gps);
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

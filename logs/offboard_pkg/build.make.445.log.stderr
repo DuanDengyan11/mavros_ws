@@ -1,0 +1,7 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::trans_and_relative_pos(Eigen::Vector3d&, double)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:123:28: error: ‘theta_d’ was not declared in this scope
+  123 |     m.setRPY(0,0,(-yaw_d + theta_d)*DEG_TO_RAD);
+      |                            ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

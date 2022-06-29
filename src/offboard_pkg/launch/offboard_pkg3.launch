@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="offboard_pkg" type="offboard_pkg_node3" name="offboard_pkg_node3" output = "screen">
+        <rosparam command="load" file="$(find offboard_pkg)/launch/param3.yaml" />
+    </node>
+</launch>

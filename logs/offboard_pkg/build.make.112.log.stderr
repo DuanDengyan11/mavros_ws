@@ -1,0 +1,28 @@
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:68:53: error: expected ‘;’ at end of member declaration
+   68 |     bool isWaypoint(geometry_msgs::PoseStamped &pose)
+      |                                                     ^
+      |                                                      ;
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:3:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/multi.cpp: In function ‘void Init_LocalWayPoints(XmlRpc::XmlRpcValue&, std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/multi.cpp:26:41: error: ‘data’ was not declared in this scope
+   26 |         LocalWayPoints_matrix.push_back(data);
+      |                                         ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:21:36: error: invalid initialization of reference of type ‘std::vector<double>&’ from expression of type ‘std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >’
+   21 |         Init_length(waypoint_list, LocalWayPoints_matrix);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:3:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/multi.cpp:4:73: note: in passing argument 2 of ‘void Init_length(XmlRpc::XmlRpcValue&, std::vector<double>&)’
+    4 | void Init_length(XmlRpc::XmlRpcValue &length_list, std::vector<double> &length)
+      |                                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:68:53: error: expected ‘;’ at end of member declaration
+   68 |     bool isWaypoint(geometry_msgs::PoseStamped &pose)
+      |                                                     ^
+      |                                                      ;
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

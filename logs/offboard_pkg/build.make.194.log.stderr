@@ -1,0 +1,25 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:3:32: error: no matching function for call to ‘ros::Rate::Rate()’
+    3 | MultiBody::MultiBody(/* args */)
+      |                                ^
+In file included from /opt/ros/noetic/include/ros/ros.h:39,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/rate.h:59:12: note: candidate: ‘ros::Rate::Rate(const ros::Duration&)’
+   59 |   explicit Rate(const Duration&);
+      |            ^~~~
+/opt/ros/noetic/include/ros/rate.h:59:12: note:   candidate expects 1 argument, 0 provided
+/opt/ros/noetic/include/ros/rate.h:58:3: note: candidate: ‘ros::Rate::Rate(double)’
+   58 |   Rate(double frequency);
+      |   ^~~~
+/opt/ros/noetic/include/ros/rate.h:58:3: note:   candidate expects 1 argument, 0 provided
+/opt/ros/noetic/include/ros/rate.h:51:20: note: candidate: ‘constexpr ros::Rate::Rate(const ros::Rate&)’
+   51 | class ROSTIME_DECL Rate
+      |                    ^~~~
+/opt/ros/noetic/include/ros/rate.h:51:20: note:   candidate expects 1 argument, 0 provided
+/opt/ros/noetic/include/ros/rate.h:51:20: note: candidate: ‘constexpr ros::Rate::Rate(ros::Rate&&)’
+/opt/ros/noetic/include/ros/rate.h:51:20: note:   candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

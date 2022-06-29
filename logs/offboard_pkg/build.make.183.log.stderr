@@ -1,0 +1,13 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::AllTakeoff()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:79:33: error: ‘j’ was not declared in this scope; did you mean ‘jn’?
+   79 |         if(uav[i].istakeoff()) {j = j+1;}
+      |                                 ^
+      |                                 jn
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:81:8: error: ‘j’ was not declared in this scope; did you mean ‘jn’?
+   81 |     if(j==nVehicle){
+      |        ^
+      |        jn
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,14 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::gps_mission_init(double&, geometry_msgs::Quaternion&, Eigen::Vector3d&, MultiBody::mission_type&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:189:54: error: no matching function for call to ‘TaskManager::get_ned_circle(double, double&, double&)’
+  189 |             ned = uav[i].get_ned_circle(0.0, yaw_d, R);
+      |                                                      ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:86:21: note: candidate: ‘Eigen::Vector3d TaskManager::get_ned_circle(double, double, double, bool)’
+   86 |     Eigen::Vector3d get_ned_circle(double theta_d, double yaw_d, double R, bool change_yaw);
+      |                     ^~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:86:21: note:   candidate expects 4 arguments, 3 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,7 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::lla2enu(const Vector3d&, const Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:195:14: error: assignment of read-only location ‘((const Eigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 0>*)(& lla1))->Eigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 0>::z()’
+  195 |     lla1.z() = lla1.z() + GeographicLib::Geoid::ELLIPSOIDTOGEOID * egm96(GeoPos.latitude, GeoPos.longitude);
+      |     ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

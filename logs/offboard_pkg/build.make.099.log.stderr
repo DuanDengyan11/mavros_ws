@@ -1,0 +1,80 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:11:16: error: missing template arguments before ‘(’ token
+   11 |     std::vector(double) length;
+      |                ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:11:17: error: expected primary-expression before ‘double’
+   11 |     std::vector(double) length;
+      |                 ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:20:36: error: ‘length’ was not declared in this scope
+   20 |         private_nh.param("length", length, 0.0);
+      |                                    ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:20:36: note: suggested alternatives:
+In file included from /opt/ros/noetic/include/tf/LinearMath/Matrix3x3.h:20,
+                 from /opt/ros/noetic/include/tf/LinearMath/Transform.h:21,
+                 from /opt/ros/noetic/include/tf/transform_datatypes.h:41,
+                 from /opt/ros/noetic/include/tf/time_cache.h:38,
+                 from /opt/ros/noetic/include/tf/tf.h:44,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:12,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/opt/ros/noetic/include/tf/LinearMath/Quaternion.h:400:1: note:   ‘tf::length’
+  400 | length(const Quaternion& q)
+      | ^~~~~~
+In file included from /opt/ros/noetic/include/tf2/transform_storage.h:36,
+                 from /opt/ros/noetic/include/tf2/buffer_core.h:35,
+                 from /opt/ros/noetic/include/tf2_ros/buffer_interface.h:35,
+                 from /opt/ros/noetic/include/tf2_ros/buffer.h:35,
+                 from /opt/ros/noetic/include/tf/tf.h:49,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:12,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/opt/ros/noetic/include/tf2/LinearMath/Quaternion.h:400:1: note:   ‘tf2::length’
+  400 | length(const Quaternion& q)
+      | ^~~~~~
+In file included from /usr/include/boost/tuple/tuple.hpp:28,
+                 from /usr/include/boost/unordered/detail/implementation.hpp:31,
+                 from /usr/include/boost/unordered/detail/map.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:21,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:12,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/usr/include/boost/tuple/detail/tuple_basic.hpp:84:26: note:   ‘boost::tuples::length’
+   84 | template<class T> struct length;
+      |                          ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:120:60: error: ‘length’ was not declared in this scope
+  120 |                 ned[i] = uav[i].get_ned(theta_d, yaw_d, R, length, angle_d[i]);
+      |                                                            ^~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:120:60: note: suggested alternatives:
+In file included from /opt/ros/noetic/include/tf/LinearMath/Matrix3x3.h:20,
+                 from /opt/ros/noetic/include/tf/LinearMath/Transform.h:21,
+                 from /opt/ros/noetic/include/tf/transform_datatypes.h:41,
+                 from /opt/ros/noetic/include/tf/time_cache.h:38,
+                 from /opt/ros/noetic/include/tf/tf.h:44,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:12,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/opt/ros/noetic/include/tf/LinearMath/Quaternion.h:400:1: note:   ‘tf::length’
+  400 | length(const Quaternion& q)
+      | ^~~~~~
+In file included from /opt/ros/noetic/include/tf2/transform_storage.h:36,
+                 from /opt/ros/noetic/include/tf2/buffer_core.h:35,
+                 from /opt/ros/noetic/include/tf2_ros/buffer_interface.h:35,
+                 from /opt/ros/noetic/include/tf2_ros/buffer.h:35,
+                 from /opt/ros/noetic/include/tf/tf.h:49,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:12,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/opt/ros/noetic/include/tf2/LinearMath/Quaternion.h:400:1: note:   ‘tf2::length’
+  400 | length(const Quaternion& q)
+      | ^~~~~~
+In file included from /usr/include/boost/tuple/tuple.hpp:28,
+                 from /usr/include/boost/unordered/detail/implementation.hpp:31,
+                 from /usr/include/boost/unordered/detail/map.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:21,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:12,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/usr/include/boost/tuple/detail/tuple_basic.hpp:84:26: note:   ‘boost::tuples::length’
+   84 | template<class T> struct length;
+      |                          ^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

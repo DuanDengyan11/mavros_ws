@@ -1,0 +1,12 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘bool TaskManager::is_GPS_succuss(Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:207:129: error: no matching function for call to ‘TaskManager::calcGPSDistance(sensor_msgs::NavSatFix_<std::allocator<void> >::_latitude_type&, sensor_msgs::NavSatFix_<std::allocator<void> >::_longitude_type&, sensor_msgs::NavSatFix_<std::allocator<void> >::_altitude_type&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar&)’
+  207 |     double distance1 = calcGPSDistance(global_lla.latitude, global_lla.longitude, global_lla.altitude, pos.x(), pos.y(), pos.z());
+      |                                                                                                                                 ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:160:8: note: candidate: ‘double TaskManager::calcGPSDistance(Eigen::Vector3d&, Eigen::Vector3d&)’
+  160 | double TaskManager::calcGPSDistance(Eigen::Vector3d &lla_new, Eigen::Vector3d &lla_old)
+      |        ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:160:8: note:   candidate expects 2 arguments, 6 provided
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

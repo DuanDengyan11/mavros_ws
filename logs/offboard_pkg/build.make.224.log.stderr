@@ -1,0 +1,16 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::is_safe()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:233:73: error: overloaded function with no contextual type information
+  233 |             distance = uav[i].calcGPSDistance(local_lla[i], local_lla[j]);
+      |                                                                         ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:234:31: error: call to non-‘constexpr’ function ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = TaskManager; _Alloc = std::allocator<TaskManager>; std::vector<_Tp, _Alloc>::reference = TaskManager&; std::vector<_Tp, _Alloc>::size_type = long unsigned int]’
+  234 |             if(distance<(uav[i].safe_distance + uav[j].safe_distance))
+      |                               ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:234:16: error: parse error in template argument list
+  234 |             if(distance<(uav[i].safe_distance + uav[j].safe_distance))
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:234:70: error: cannot resolve overloaded function ‘distance’ based on conversion to type ‘bool’
+  234 |             if(distance<(uav[i].safe_distance + uav[j].safe_distance))
+      |                                                                      ^
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

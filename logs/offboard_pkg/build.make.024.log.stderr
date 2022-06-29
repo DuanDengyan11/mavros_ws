@@ -1,0 +1,32 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:97:9: error: expected unqualified-id before ‘if’
+   97 |         if(nVehicle>2){
+      |         ^~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:100:10: error: expected ‘}’ before ‘else’
+  100 |         }else{
+      |          ^~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:93:5: note: to match this ‘{’
+   93 |     {
+      |     ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:101:13: error: ‘yaw_d’ was not declared in this scope
+  101 |             yaw_d = uav[0].get_yaw_d();
+      |             ^~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:102:13: error: ‘lla_load0’ was not declared in this scope
+  102 |             lla_load0 = uav[0].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:107:13: error: ‘theta_d’ was not declared in this scope
+  107 |             theta_d = 360.0/(nSample-1)*i;
+      |             ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:107:30: error: ‘nSample’ was not declared in this scope
+  107 |             theta_d = 360.0/(nSample-1)*i;
+      |                              ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:107:41: error: ‘i’ was not declared in this scope
+  107 |             theta_d = 360.0/(nSample-1)*i;
+      |                                         ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:115:1: error: expected declaration before ‘}’ token
+  115 | }
+      | ^
+make[2]: *** [CMakeFiles/main.dir/build.make:63: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

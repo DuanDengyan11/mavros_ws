@@ -1,0 +1,22 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:450:5: error: ‘get_att’ was not declared in this scope; did you mean ‘getdate’?
+  450 |     get_att(yaw_d,q);
+      |     ^~~~~~~
+      |     getdate
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:473:41: error: no match for ‘operator=’ (operand types are ‘geometry_msgs::Pose_<std::allocator<void> >::_orientation_type’ {aka ‘geometry_msgs::Quaternion_<std::allocator<void> >’} and ‘double’)
+  473 |             tempPose.pose.orientation = q;
+      |                                         ^
+In file included from /opt/ros/noetic/include/geometry_msgs/Pose.h:19,
+                 from /opt/ros/noetic/include/geometry_msgs/PoseStamped.h:19,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:2,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8: note: candidate: ‘constexpr geometry_msgs::Quaternion_<std::allocator<void> >& geometry_msgs::Quaternion_<std::allocator<void> >::operator=(const geometry_msgs::Quaternion_<std::allocator<void> >&)’
+   22 | struct Quaternion_
+      |        ^~~~~~~~~~~
+/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8: note:   no known conversion for argument 1 from ‘double’ to ‘const geometry_msgs::Quaternion_<std::allocator<void> >&’
+/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8: note: candidate: ‘constexpr geometry_msgs::Quaternion_<std::allocator<void> >& geometry_msgs::Quaternion_<std::allocator<void> >::operator=(geometry_msgs::Quaternion_<std::allocator<void> >&&)’
+/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8: note:   no known conversion for argument 1 from ‘double’ to ‘geometry_msgs::Quaternion_<std::allocator<void> >&&’
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

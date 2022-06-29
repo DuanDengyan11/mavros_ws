@@ -1,0 +1,33 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:43:9: error: ‘Init_length_angle_circle’ was not declared in this scope; did you mean ‘Init_length_angle’?
+   43 |         Init_length_angle_circle(length_angle_circle_list);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+      |         Init_length_angle
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_lla_circle(double, Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:220:51: error: no matching function for call to ‘TaskManager::get_ned(float&, double&, double&)’
+  220 |             ned = uav[i].get_ned(theta_d, yaw_d, R);
+      |                                                   ^
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:77:21: note: candidate: ‘Eigen::Vector3d TaskManager::get_ned(double, double, double, std::string&)’
+   77 |     Eigen::Vector3d get_ned(double theta_d, double yaw_d, double R, std::string &type);
+      |                     ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:77:21: note:   candidate expects 4 arguments, 3 provided
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:262:6: error: no declaration matches ‘void MultiBody::Init_length_angle_circle(XmlRpc::XmlRpcValue&)’
+  262 | void MultiBody::Init_length_angle_circle(XmlRpc::XmlRpcValue &length_angle_circle_list)
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:262:6: note: no functions named ‘void MultiBody::Init_length_angle_circle(XmlRpc::XmlRpcValue&)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘Eigen::Vector3d TaskManager::get_ned(double, double, double, std::string&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:94:13: error: ‘expression’ was not declared in this scope
+   94 |     switch (expression)
+      |             ^~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

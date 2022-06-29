@@ -1,0 +1,18 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:218:37: error: ‘__gnu_cxx::__alloc_traits<std::allocator<TaskManager>, TaskManager>::value_type’ {aka ‘class TaskManager’} has no member named ‘get_vel’; did you mean ‘get_ned’?
+  218 |         vel_lead0 = uav[lead_index].get_vel();
+      |                                     ^~~~~~~
+      |                                     get_ned
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:220:17: error: no declaration matches ‘Eigen::Vector3d TaskManager::get_vel()’
+  220 | Eigen::Vector3d TaskManager::get_vel()
+      |                 ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:220:17: note: no functions named ‘Eigen::Vector3d TaskManager::get_vel()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,29 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:166:8: error: no declaration matches ‘double TaskManager::calcGPSDistance(double, double, double, double, double, double)’
+  166 | double TaskManager::calcGPSDistance(double latitude_new, double longitude_new, double altitude_new, double latitude_old, double longitude_old, double altitude_old)
+      |        ^~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:74:12: note: candidate is: ‘double TaskManager::calcGPSDistance(double, double, double, double)’
+   74 |     double calcGPSDistance(double latitude_new, double longitude_new, double latitude_old, double longitude_old);
+      |            ^~~~~~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:196:17: error: no declaration matches ‘Eigen::Vector3d TaskManager::get_lla()’
+  196 | Eigen::Vector3d TaskManager::get_lla()
+      |                 ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:196:17: note: no functions named ‘Eigen::Vector3d TaskManager::get_lla()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:205:6: error: no declaration matches ‘void TaskManager::is_GPSpos_succuss(Eigen::Vector3d&)’
+  205 | void TaskManager::is_GPSpos_succuss(Eigen::Vector3d &pos)
+      |      ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:205:6: note: no functions named ‘void TaskManager::is_GPSpos_succuss(Eigen::Vector3d&)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

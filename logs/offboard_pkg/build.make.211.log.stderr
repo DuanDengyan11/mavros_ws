@@ -1,0 +1,12 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp: In member function ‘bool TaskManager::is_GPS_succuss(Eigen::Vector3d&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:208:40: error: cannot convert ‘sensor_msgs::NavSatFix’ {aka ‘sensor_msgs::NavSatFix_<std::allocator<void> >’} to ‘Eigen::Vector3d&’ {aka ‘Eigen::Matrix<double, 3, 1>&’}
+  208 |     double distance1 = calcGPSDistance(global_lla, pos);
+      |                                        ^~~~~~~~~~
+      |                                        |
+      |                                        sensor_msgs::NavSatFix {aka sensor_msgs::NavSatFix_<std::allocator<void> >}
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:160:54: note:   initializing argument 1 of ‘double TaskManager::calcGPSDistance(Eigen::Vector3d&, Eigen::Vector3d&)’
+  160 | double TaskManager::calcGPSDistance(Eigen::Vector3d &lla_new, Eigen::Vector3d &lla_old)
+      |                                     ~~~~~~~~~~~~~~~~~^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

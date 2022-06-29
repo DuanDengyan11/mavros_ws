@@ -1,0 +1,25 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:93:38: error: cannot convert ‘double [3]’ to ‘geometry_msgs::PoseStamped&’ {aka ‘geometry_msgs::PoseStamped_<std::allocator<void> >&’}
+   93 |                 if(uav[i].isWaypoint(waypoint)) {j = j+1;}
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      double [3]
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:68:49: note:   initializing argument 1 of ‘bool TaskManager::isWaypoint(geometry_msgs::PoseStamped&)’
+   68 |     bool isWaypoint(geometry_msgs::PoseStamped &pose);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:72:6: error: no declaration matches ‘bool TaskManager::isWaypoint(double*)’
+   72 | bool TaskManager::isWaypoint(double waypoint[])
+      |      ^~~~~~~~~~~
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:68:10: note: candidate is: ‘bool TaskManager::isWaypoint(geometry_msgs::PoseStamped&)’
+   68 |     bool isWaypoint(geometry_msgs::PoseStamped &pose);
+      |          ^~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,16 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightCircle()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:172:12: error: ‘lla_lead0’ is not a member of ‘Eigen’
+  172 |     Eigen::lla_lead0;
+      |            ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:178:13: error: ‘lla_lead0’ was not declared in this scope
+  178 |             lla_lead0 = uav[nVehicle-1].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:181:13: error: ‘lla_lead0’ was not declared in this scope
+  181 |             lla_lead0 = uav[0].get_lla();
+      |             ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:184:32: error: ‘lla_lead0’ was not declared in this scope
+  184 |         Init_lla_circle(yaw_d, lla_lead0);
+      |                                ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

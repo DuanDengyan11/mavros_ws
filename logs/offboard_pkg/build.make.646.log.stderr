@@ -1,0 +1,1397 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:17: error: no match for ‘operator>>’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘const char [6]’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |     ~~~~~~~~~~~~^~~~~~~~~
+      |     |             |
+      |     |             const char [6]
+      |     std::ifstream {aka std::basic_ifstream<char>}
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:168:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind non-const lvalue reference of type ‘bool&’ to an rvalue of type ‘bool’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:172:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]’ <near match>
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘short int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(short int)((const char*)"test:")’ to ‘short int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:175:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘short unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(short unsigned int)((const char*)"test:")’ to ‘short unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:179:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]’ <near match>
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(int)((const char*)"test:")’ to ‘int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:182:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(unsigned int)((const char*)"test:")’ to ‘unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:186:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long int)((const char*)"test:")’ to ‘long int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:190:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long unsigned int)((const char*)"test:")’ to ‘long unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:195:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long long int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long long int)((const char*)"test:")’ to ‘long long int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:199:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long long unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long long unsigned int)((const char*)"test:")’ to ‘long long unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:235:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const void*’ to ‘void*’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const void*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(void*)((const void*)((const char*)"test:"))’ to ‘void*&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:120:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:120:36: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)’ {aka ‘std::basic_istream<char>& (*)(std::basic_istream<char>&)’}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:124:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]’
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:124:32: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:131:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:131:30: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::ios_base& (*)(std::ios_base&)’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:214:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:214:25: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘float&’
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/9/istream:218:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:218:26: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘double&’
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+/usr/include/c++/9/istream:222:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:222:31: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘long double&’
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/9/istream:259:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]’
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:259:36: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1466 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/istream.tcc:931:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)’
+  931 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:931:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘const char [6]’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:756:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)’
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:756:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘unsigned char&’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:761:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)’
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:761:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘signed char&’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/istream.tcc:963:5: note: candidate: ‘template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)’
+  963 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:963:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   deduced conflicting types for parameter ‘_CharT2’ (‘char’ and ‘const char’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:803:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)’
+  803 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:803:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘unsigned char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:808:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)’
+  808 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:808:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘signed char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:980:5: note: candidate: ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&)’
+  980 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:980:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/istream: In substitution of ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_ifstream<char>&; _Tp = const char (&)[6]]’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19:   required from here
+/usr/include/c++/9/istream:980:5: error: no type named ‘type’ in ‘struct std::enable_if<false, std::basic_istream<char>&>’
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:71:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)’
+   71 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:71:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Resetiosflags’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:101:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)’
+  101 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:101:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setiosflags’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:132:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)’
+  132 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:132:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setbase’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:170:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  170 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:170:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Setfill<_CharT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:200:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)’
+  200 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:200:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setprecision’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:230:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)’
+  230 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:230:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setw’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:264:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_money<_MoneyT>)’
+  264 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:264:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Get_money<_MoneyT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:418:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_time<_CharT>)’
+  418 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:418:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Get_time<_CharT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:498:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::complex<_Tp>&)’
+  498 |     operator>>(basic_istream<_CharT, _Traits>& __is, complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:498:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::complex<_Tp>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/detail/container_fwd.hpp:96,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bitset:1470:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bitset<_Nb>&)’
+ 1470 |     operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/bitset:1470:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::bitset<_Nb>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:17: error: no match for ‘operator>>’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘const char [6]’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |     ~~~~~~~~~~~~^~~~~~~~~
+      |     |             |
+      |     |             const char [6]
+      |     std::ifstream {aka std::basic_ifstream<char>}
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:168:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind non-const lvalue reference of type ‘bool&’ to an rvalue of type ‘bool’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:172:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]’ <near match>
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘short int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(short int)((const char*)"test:")’ to ‘short int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:175:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘short unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(short unsigned int)((const char*)"test:")’ to ‘short unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:179:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]’ <near match>
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(int)((const char*)"test:")’ to ‘int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:182:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(unsigned int)((const char*)"test:")’ to ‘unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:186:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long int)((const char*)"test:")’ to ‘long int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:190:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long unsigned int)((const char*)"test:")’ to ‘long unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:195:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long long int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long long int)((const char*)"test:")’ to ‘long long int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:199:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long long unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long long unsigned int)((const char*)"test:")’ to ‘long long unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:235:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const void*’ to ‘void*’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const void*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(void*)((const void*)((const char*)"test:"))’ to ‘void*&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:120:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:120:36: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)’ {aka ‘std::basic_istream<char>& (*)(std::basic_istream<char>&)’}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:124:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]’
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:124:32: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:131:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:131:30: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::ios_base& (*)(std::ios_base&)’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:214:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:214:25: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘float&’
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/9/istream:218:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:218:26: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘double&’
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+/usr/include/c++/9/istream:222:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:222:31: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘long double&’
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/9/istream:259:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]’
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:259:36: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1466 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/istream.tcc:931:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)’
+  931 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:931:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘const char [6]’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:756:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)’
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:756:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘unsigned char&’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:761:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)’
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:761:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘signed char&’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/istream.tcc:963:5: note: candidate: ‘template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)’
+  963 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:963:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   deduced conflicting types for parameter ‘_CharT2’ (‘char’ and ‘const char’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:803:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)’
+  803 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:803:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘unsigned char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:808:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)’
+  808 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:808:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘signed char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:980:5: note: candidate: ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&)’
+  980 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:980:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/istream: In substitution of ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_ifstream<char>&; _Tp = const char (&)[6]]’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19:   required from here
+/usr/include/c++/9/istream:980:5: error: no type named ‘type’ in ‘struct std::enable_if<false, std::basic_istream<char>&>’
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:71:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)’
+   71 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:71:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Resetiosflags’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:101:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)’
+  101 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:101:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setiosflags’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:132:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)’
+  132 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:132:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setbase’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:170:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  170 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:170:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Setfill<_CharT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:200:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)’
+  200 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:200:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setprecision’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:230:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)’
+  230 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:230:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setw’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:264:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_money<_MoneyT>)’
+  264 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:264:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Get_money<_MoneyT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:418:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_time<_CharT>)’
+  418 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:418:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Get_time<_CharT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:498:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::complex<_Tp>&)’
+  498 |     operator>>(basic_istream<_CharT, _Traits>& __is, complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:498:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::complex<_Tp>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/detail/container_fwd.hpp:96,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bitset:1470:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bitset<_Nb>&)’
+ 1470 |     operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/bitset:1470:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::bitset<_Nb>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:393: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/offboard_pkg_node2.dir/build.make:89: CMakeFiles/offboard_pkg_node2.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/offboard_pkg_node2.dir/all] Error 2
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:17: error: no match for ‘operator>>’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘const char [6]’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |     ~~~~~~~~~~~~^~~~~~~~~
+      |     |             |
+      |     |             const char [6]
+      |     std::ifstream {aka std::basic_ifstream<char>}
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:168:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind non-const lvalue reference of type ‘bool&’ to an rvalue of type ‘bool’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:172:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]’ <near match>
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘short int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(short int)((const char*)"test:")’ to ‘short int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:175:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘short unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(short unsigned int)((const char*)"test:")’ to ‘short unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:179:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]’ <near match>
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(int)((const char*)"test:")’ to ‘int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:182:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(unsigned int)((const char*)"test:")’ to ‘unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:186:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long int)((const char*)"test:")’ to ‘long int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:190:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long unsigned int)((const char*)"test:")’ to ‘long unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:195:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long long int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long long int)((const char*)"test:")’ to ‘long long int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:199:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const char*’ to ‘long long unsigned int’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const char*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(long long unsigned int)((const char*)"test:")’ to ‘long long unsigned int&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:235:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ <near match>
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: invalid conversion from ‘const void*’ to ‘void*’ [-fpermissive]
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+      |                   |
+      |                   const void*
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: error: cannot bind rvalue ‘(void*)((const void*)((const char*)"test:"))’ to ‘void*&’
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:120:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:120:36: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)’ {aka ‘std::basic_istream<char>& (*)(std::basic_istream<char>&)’}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:124:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]’
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:124:32: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:131:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:131:30: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::ios_base& (*)(std::ios_base&)’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/9/istream:214:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:214:25: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘float&’
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/9/istream:218:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:218:26: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘double&’
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+/usr/include/c++/9/istream:222:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:222:31: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘long double&’
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/9/istream:259:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]’
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+/usr/include/c++/9/istream:259:36: note:   no known conversion for argument 1 from ‘const char [6]’ to ‘std::basic_istream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1466 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/istream.tcc:931:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)’
+  931 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:931:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘const char [6]’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:756:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)’
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:756:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘unsigned char&’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:761:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)’
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:761:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘signed char&’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bits/istream.tcc:963:5: note: candidate: ‘template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)’
+  963 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:963:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   deduced conflicting types for parameter ‘_CharT2’ (‘char’ and ‘const char’)
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:803:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)’
+  803 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:803:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘unsigned char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:808:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)’
+  808 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:808:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘signed char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/istream:980:5: note: candidate: ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&)’
+  980 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:980:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/istream: In substitution of ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_ifstream<char>&; _Tp = const char (&)[6]]’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19:   required from here
+/usr/include/c++/9/istream:980:5: error: no type named ‘type’ in ‘struct std::enable_if<false, std::basic_istream<char>&>’
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:71:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)’
+   71 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:71:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Resetiosflags’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:101:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)’
+  101 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:101:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setiosflags’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:132:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)’
+  132 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:132:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setbase’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:170:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  170 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:170:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Setfill<_CharT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:200:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)’
+  200 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:200:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setprecision’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:230:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)’
+  230 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:230:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   cannot convert ‘"test:"’ (type ‘const char [6]’) to type ‘std::_Setw’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:264:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_money<_MoneyT>)’
+  264 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:264:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Get_money<_MoneyT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/iomanip:418:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_time<_CharT>)’
+  418 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:418:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::_Get_time<_CharT>’ and ‘const char*’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/complex:498:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::complex<_Tp>&)’
+  498 |     operator>>(basic_istream<_CharT, _Traits>& __is, complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:498:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::complex<_Tp>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+In file included from /usr/include/boost/detail/container_fwd.hpp:96,
+                 from /usr/include/boost/container_hash/extensions.hpp:22,
+                 from /usr/include/boost/container_hash/hash.hpp:760,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from /opt/ros/noetic/include/tf/tf.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:14,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/usr/include/c++/9/bitset:1470:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bitset<_Nb>&)’
+ 1470 |     operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/bitset:1470:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:19: note:   mismatched types ‘std::bitset<_Nb>’ and ‘const char [6]’
+   63 |     WriteLogFile>>"test:">>endl;
+      |                   ^~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node3.dir/build.make:89: CMakeFiles/offboard_pkg_node3.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/offboard_pkg_node3.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

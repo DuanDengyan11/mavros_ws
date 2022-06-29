@@ -1,0 +1,17 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘bool MultiBody::FlightLine()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:202:23: error: ‘get_lla_line’ was not declared in this scope
+  202 |                 lla = get_lla_line(lla_lead0, yaw_d);
+      |                       ^~~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:110:36: error: no declaration matches ‘mavros_msgs::GlobalPositionTarget TaskManager::get_lla_line(Eigen::Vector3d&, double)’
+  110 |  mavros_msgs::GlobalPositionTarget TaskManager::get_lla_line(Eigen::Vector3d &lla, double yaw_d)
+      |                                    ^~~~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:110:36: note: no functions named ‘mavros_msgs::GlobalPositionTarget TaskManager::get_lla_line(Eigen::Vector3d&, double)’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:15:7: note: ‘class TaskManager’ defined here
+   15 | class TaskManager
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:76: CMakeFiles/offboard_pkg_node.dir/src/TaskManager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

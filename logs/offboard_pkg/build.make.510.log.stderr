@@ -1,0 +1,17 @@
+[01m[K/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmulti.cpp: No such file or directory
+    2 | #include [01;31m[K"multi.cpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In member function ‘void MultiBody::Init_LocalWayPoints(XmlRpc::XmlRpcValue&)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:450:5: error: ‘get_att’ was not declared in this scope; did you mean ‘getdate’?
+  450 |     get_att(yaw_d,q);
+      |     ^~~~~~~
+      |     getdate
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:473:13: error: ‘yaw’ was not declared in this scope
+  473 |             yaw = data_list[3 + 4*j];
+      |             ^~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

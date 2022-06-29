@@ -1,0 +1,39 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:19:46: error: no matching function for call to ‘ros::NodeHandle::param(const char [7], XmlRpc::XmlRpcValue&, int)’
+   19 |     private_nh.param("height", height_list, 1);
+      |                                              ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note: candidate: ‘template<class T> bool ros::NodeHandle::param(const string&, T&, const T&) const’
+ 2120 |   bool param(const std::string& param_name, T& param_val, const T& default_val) const
+      |        ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2120:8: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:19:46: note:   deduced conflicting types for parameter ‘const T’ (‘XmlRpc::XmlRpcValue’ and ‘int’)
+   19 |     private_nh.param("height", height_list, 1);
+      |                                              ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:1,
+                 from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note: candidate: ‘template<class T> T ros::NodeHandle::param(const string&, const T&) const’
+ 2153 |   T param(const std::string& param_name, const T& default_val) const
+      |     ^~~~~
+/opt/ros/noetic/include/ros/node_handle.h:2153:5: note:   template argument deduction/substitution failed:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:19:46: note:   candidate expects 2 arguments, 3 provided
+   19 |     private_nh.param("height", height_list, 1);
+      |                                              ^
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: At global scope:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:75:6: error: no declaration matches ‘bool MultiBody::AllTakeoff()’
+   75 | bool MultiBody::AllTakeoff()
+      |      ^~~~~~~~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:75:6: note: no functions named ‘bool MultiBody::AllTakeoff()’
+In file included from /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:1:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h:5:7: note: ‘class MultiBody’ defined here
+    5 | class MultiBody
+      |       ^~~~~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

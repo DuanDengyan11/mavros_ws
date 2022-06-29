@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/main.dir/src/TaskManager.cpp.o:(.bss+0x0): multiple definition of `egm96'; CMakeFiles/main.dir/src/main.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/main.dir/src/TaskManager.cpp.o:(.bss+0x3e0): multiple definition of `map'; CMakeFiles/main.dir/src/main.cpp.o:(.bss+0x3e0): first defined here
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/main.dir/build.make:122: /home/tutu/FControl/mavros_ws/devel/.private/offboard_pkg/lib/offboard_pkg/main] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

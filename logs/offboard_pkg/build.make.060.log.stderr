@@ -1,0 +1,10 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:122:13: error: expected initializer before ‘for’
+  122 |             for (size_t i = 0; i < nCraft; i++)
+      |             ^~~
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:122:32: error: ‘i’ was not declared in this scope
+  122 |             for (size_t i = 0; i < nCraft; i++)
+      |                                ^
+make[2]: *** [CMakeFiles/main.dir/build.make:63: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

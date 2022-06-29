@@ -1,0 +1,12 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp: In function ‘int main(int, char**)’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:33:9: error: ‘Init_angle_cone’ was not declared in this scope; did you mean ‘angle_cone’?
+   33 |         Init_angle_cone(angle_cone_list, angle_cone, nVehicle);
+      |         ^~~~~~~~~~~~~~~
+      |         angle_cone
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp:114:9: error: ‘angle_d’ was not declared in this scope; did you mean ‘angle_cone’?
+  114 |         angle_d[0].x() = 0; angle_d[0].y() = 0;
+      |         ^~~~~~~
+      |         angle_cone
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:63: CMakeFiles/offboard_pkg_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:399: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

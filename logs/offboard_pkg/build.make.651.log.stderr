@@ -1,0 +1,20 @@
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:12: error: request for member ‘_close’ in ‘x_file’, which is of pointer type ‘FILE*’ {aka ‘_IO_FILE*’} (maybe you meant to use ‘->’ ?)
+   63 |     x_file._close();
+      |            ^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node2.dir/build.make:89: CMakeFiles/offboard_pkg_node2.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/offboard_pkg_node2.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:12: error: request for member ‘_close’ in ‘x_file’, which is of pointer type ‘FILE*’ {aka ‘_IO_FILE*’} (maybe you meant to use ‘->’ ?)
+   63 |     x_file._close();
+      |            ^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node3.dir/build.make:89: CMakeFiles/offboard_pkg_node3.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/offboard_pkg_node3.dir/all] Error 2
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp: In constructor ‘MultiBody::MultiBody()’:
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.cpp:63:12: error: request for member ‘_close’ in ‘x_file’, which is of pointer type ‘FILE*’ {aka ‘_IO_FILE*’} (maybe you meant to use ‘->’ ?)
+   63 |     x_file._close();
+      |            ^~~~~~
+make[2]: *** [CMakeFiles/offboard_pkg_node.dir/build.make:89: CMakeFiles/offboard_pkg_node.dir/src/MultiBody.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:393: CMakeFiles/offboard_pkg_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
