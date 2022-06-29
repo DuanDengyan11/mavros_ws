@@ -1,6 +1,6 @@
 [submodule "src/mavlink"]
 	path = src/mavlink
-	url = https://gitee.com/duandengyan11/mavlink
+	url = https://github.com/DuanDengyan11/mavlink
 [submodule "src/mavros/mavros"]
 	path = src/mavros/mavros
-	url = https://gitee.com/duandengyan11/mavros
+	url = https://github.com/DuanDengyan11/mavros

@@ -24,6 +24,10 @@ string
 iostream
 -
 
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.cpp
+TaskManager.h
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h
+
 /home/tutu/FControl/mavros_ws/src/offboard_pkg/src/TaskManager.h
 ros/ros.h
 -
@@ -53,6 +57,10 @@ GeographicLib/Geocentric.hpp
 -
 tf/tf.h
 -
+
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/main.cpp
+MultiBody.h
+/home/tutu/FControl/mavros_ws/src/offboard_pkg/src/MultiBody.h
 
 /opt/ros/noetic/include/eigen_conversions/eigen_msg.h
 std_msgs/Float64MultiArray.h
