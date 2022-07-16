@@ -298,7 +298,7 @@ bool TaskManager::is_enu_success(Eigen::Vector3d &enu, double yaw_d, double thet
     bool is_enu = false;
     tempPose.pose.position.x = enu.x();
     tempPose.pose.position.y = enu.y();
-    tempPose.pose.position.z = enu.z();
+    tempPose.pose.position.z = local_pose.pose.position.z;
 
     double yaw;
     if (change_yaw)
@@ -349,7 +349,7 @@ void TaskManager::publish_enu(Eigen::Vector3d &enu, double yaw_d, double theta_d
 {
     tempPose.pose.position.x = enu.x();
     tempPose.pose.position.y = enu.y();
-    tempPose.pose.position.z = enu.z();
+    tempPose.pose.position.z = local_pose.pose.position.z;
 
     double yaw;
     if (change_yaw)
